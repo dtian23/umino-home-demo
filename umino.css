@@ -261,6 +261,10 @@ button {
     position: relative;
 }
 
+.relative-important {
+    position: relative !important;
+}
+
 .absolute {
     position: absolute;
 }
@@ -458,10 +462,6 @@ button {
 
 .full-width {
     width: 100%;
-}
-
-.line-through {
-    text-decoration: line-through;
 }
 
 .discount {
