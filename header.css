@@ -328,6 +328,10 @@ header {
     .menu {
         display: none;
     }
+
+    .phoneMail {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 1025px) {
@@ -336,10 +340,4 @@ header {
         display: none;
     }
 
-}
-
-@media only screen and (max-width: 991px) {
-    .phoneMail {
-        display: none;
-    }
 }
