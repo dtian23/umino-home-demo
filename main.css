@@ -13,11 +13,12 @@
 
 .black-beanie {
     display: flex;
-    aspect-ratio: auto 1920 / 850;
+    /* aspect-ratio: auto 1920 / 850; */
     width: 100%;
     height: auto;
-    top: 0;
+    /* top: 0;
     left: 0;
+    right: 0; */
     object-fit: cover;
 }
 
@@ -457,7 +458,9 @@ details>summary::-webkit-details-marker {
         padding-bottom: 5rem;
         row-gap: 2rem;
     }
+}
 
+@media only screen and (min-width: 1200px) {
     .btn {
         font-size: 1.2rem;
         padding: 2rem 5.6rem;
