@@ -43,7 +43,8 @@
 }
 
 .catalog-middle-left,
-.catalog-middle-right {
+.catalog-middle-right,
+.middle {
     display: flex;
     flex: 1 0 auto;
     width: 100%;
@@ -375,12 +376,7 @@ details>summary::-webkit-details-marker {
         width: calc((100% - 5px)/2);
     }
 
-    .banner-item {
-        display: flex;
-        flex: 0 0 auto;
-        width: calc((100% - 30px*2)/3);
-        row-gap: 2rem;
-    }
+
 
     .image-instagram {
         display: flex;
@@ -435,12 +431,6 @@ details>summary::-webkit-details-marker {
         font-size: 1.2rem !important;
     }
 
-    .btn-second {
-        font-size: 1rem !important;
-        width: 10rem !important;
-        height: 3rem !important;
-    }
-
     .to-left-slide,
     .to-right-slide {
         top: 50%;
@@ -451,6 +441,15 @@ details>summary::-webkit-details-marker {
         width: calc((100% - 30px)/2);
     }
 
+}
+
+@media only screen and (min-width: 768px) {
+    .banner-item {
+        display: flex;
+        flex: 0 0 auto;
+        width: calc((100% - 30px*2)/3);
+        row-gap: 2rem;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -469,16 +468,16 @@ details>summary::-webkit-details-marker {
 
 @media only screen and (max-width: 1024px) {
 
-    .btn-second {
+    /* .btn-second {
         font-size: 1.2rem;
         width: 12rem;
         height: 3.5rem;
-    }
+    } */
 
-    .absolute-sides,
-    .absolute-middle-top,
-    .absolute-middle-bottom {
-        bottom: 1rem !important;
+    .btn-second {
+        font-size: 1rem !important;
+        width: 10rem !important;
+        height: 3rem !important;
     }
 
     .product-banner span {
@@ -496,6 +495,16 @@ details>summary::-webkit-details-marker {
     .shop-by-gram {
         padding-top: 8rem;
     }
+}
+
+@media only screen and (max-width: 1225px) {
+
+    .absolute-sides,
+    .absolute-middle-top,
+    .absolute-middle-bottom {
+        bottom: 1rem !important;
+    }
+
 }
 
 @media only screen and (max-width: 1440px) {

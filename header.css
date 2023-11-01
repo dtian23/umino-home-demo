@@ -301,10 +301,6 @@ header {
         font-size: 1.2rem;
     }
 
-    .phoneMail {
-        display: none;
-    }
-
     .container-header {
         margin-left: auto;
         margin-right: auto;
@@ -340,4 +336,10 @@ header {
         display: none;
     }
 
+}
+
+@media only screen and (max-width: 991px) {
+    .phoneMail {
+        display: none;
+    }
 }
