@@ -311,12 +311,6 @@ header {
         padding: 2rem 3rem;
     }
 
-    .mobile-navbar i {
-        font-size: 2rem;
-        margin: auto 0;
-        cursor: pointer;
-    }
-
     .mobile-navbar>img {
         margin-left: 7rem;
     }
@@ -331,6 +325,12 @@ header {
 
     .phoneMail {
         display: none;
+    }
+
+    .mobile-navbar i {
+        font-size: 2rem;
+        margin: auto 0;
+        cursor: pointer;
     }
 }
 
