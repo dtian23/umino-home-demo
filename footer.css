@@ -105,8 +105,8 @@
 
 .newsletter input {
     flex: 1;
+    border: 1px solid #ebebeb;
     border-radius: 30px;
-    border-color: var(--bodyFashion);
     padding: 1rem 2rem;
 }
 

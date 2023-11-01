@@ -261,13 +261,15 @@
                 <div id="overLay"></div>
 
                 <div
-                    class="mobile-navbar container-header-tail d-flex-row justify-content-between">
-
-                    <a href="javascript:void(0)"
-                        onclick="openNav();disableScroll();setGray(); on()">
-                        <i class="fa fa-solid fa-bars"
-                            style="color: #000000;"></i>
-                    </a>
+                    class="mobile-navbar container-header-tail d-flex-row">
+                    <div
+                        class="flex-30 justify-content-start">
+                        <a href="javascript:void(0)"
+                            onclick="openNav();disableScroll();setGray(); on()">
+                            <i class="fa fa-solid fa-bars"
+                                style="color: #000000;"></i>
+                        </a>
+                    </div>
 
                     <div id="side-panel"
                         class="side-panel d-flex-column"
@@ -568,34 +570,41 @@
                         </span>
                     </div>
 
-                    <img src="./media/brand.svg"
-                        alt="Umino Brands">
+                    <div
+                        class="flex-40 justify-content-center px-15">
+                        <img src="./media/brand.svg"
+                            alt="Umino Brands">
 
-                    <ul
-                        class="d-flex-row align-item-center col-gap-20">
-                        <li>
-                            <a class="d-block" href="">
-                                <img src="./media/Search.svg"
-                                    alt="Search item"
-                                    class="d-block">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="d-block" href="">
-                                <img src="./media/Login.svg"
-                                    alt="Sign in"
-                                    class="sign-in d-block">
-                            </a>
-                        </li>
+                    </div>
 
-                        <li>
-                            <a class="d-block" href="">
-                                <img src="./media/cart.svg"
-                                    alt="Your cart"
-                                    class="d-block">
-                            </a>
-                        </li>
-                    </ul>
+                    <div
+                        class="flex-30 justify-content-end">
+                        <ul
+                            class="d-flex-row align-item-center col-gap-20">
+                            <li>
+                                <a class="d-block" href="">
+                                    <img src="./media/Search.svg"
+                                        alt="Search item"
+                                        class="d-block">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="d-block" href="">
+                                    <img src="./media/Login.svg"
+                                        alt="Sign in"
+                                        class="sign-in d-block">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="d-block" href="">
+                                    <img src="./media/cart.svg"
+                                        alt="Your cart"
+                                        class="d-block">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
                 </div>
             </div>
@@ -1512,7 +1521,7 @@
                         </div>
 
                         <div
-                            class="insta-tail d-flex-row justify-content-between justify-content-center gap-10">
+                            class="insta-tail d-flex-row gap-10">
                             <div
                                 class="image-instagram relative">
                                 <div class="d-block hidden">
