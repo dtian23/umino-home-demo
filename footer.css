@@ -29,8 +29,22 @@
     padding-bottom: 11.5rem;
 }
 
+.panel ul li {
+    font-size: 1.4rem;
+}
+
 .contact p {
     margin: 0;
+}
+
+.footer-extra-info,
+.tool-tip-text {
+    font-size: 1.4rem;
+}
+
+.tool-tip img {
+    height: 3.5rem;
+    width: 3.5rem;
 }
 
 .contact>div {
@@ -141,18 +155,21 @@
     height: auto;
 }
 
-@media only screen and (min-width: 350px) {
+/* @media only screen and (min-width: 350px) {
     .media-contact {
         column-gap: 1rem;
     }
+} */
+
+.media-contact {
+    column-gap: 1rem;
 }
 
-@media only screen and (max-width: 450px) {
+/* @media only screen and (max-width: 450px) {
 
     details {
         padding: 0;
         border-radius: 4px;
-        /* margin-bottom: 1em; */
         transition: all 0.4s ease-in-out;
         max-height: 4rem;
         overflow: hidden;
@@ -185,9 +202,11 @@
     .footer-menu-desktop {
         display: none;
     }
-}
+} */
 
-@media only screen and (min-width: 450px) {
+@media only screen and (max-width: 576px) {}
+
+/* @media only screen and (min-width: 450px) {
 
     .col-xl-2,
     .col-xl-3 {
@@ -228,9 +247,55 @@
     .footer-large-screen {
         display: none;
     }
+} */
+
+@media only screen and (min-width: 576px) {
+
+    .contact {
+        row-gap: 1rem;
+    }
+
+    .hot-categories,
+    .customer-service,
+    .newsletter {
+        row-gap: 0.5rem;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
+
+    details {
+        padding: 0;
+        border-radius: 4px;
+        transition: all 0.4s ease-in-out;
+        max-height: 5rem;
+        overflow: hidden;
+    }
+
+    details[open] {
+        background-color: rgba(0, 0, 0, 0.05);
+        max-height: 50rem;
+        padding: 1rem;
+    }
+
+    .column {
+        width: 100%;
+        align-items: start;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .contact,
+    .hot-categories,
+    .customer-service,
+    .newsletter {
+        border-bottom: 1px solid #f6eaea;
+    }
+
+    .footer-head {
+        width: 100%;
+    }
 
     .footer-head {
         padding-bottom: 6rem;
@@ -240,23 +305,12 @@
         row-gap: 0.6rem;
     }
 
-    .contact p,
-    .newsletter p {
-        font-size: 1.2rem;
-    }
-
-    .hot-categories a,
-    .customer-service a {
-        font-size: 1.2rem;
-    }
-
-    .tool-tip img {
-        height: 2.8rem;
-        width: 2.8rem;
+    .footer-menu-desktop {
+        display: none;
     }
 }
 
-@media only screen and (min-width: 700px) {
+/* @media only screen and (min-width: 700px) {
     .footer-extra-small-screen {
         display: none;
     }
@@ -268,6 +322,39 @@
     .footer-large-screen {
         display: none;
     }
+} */
+
+@media only screen and (min-width: 768px) {
+    .footer-extra-small-screen {
+        display: none;
+    }
+
+    .footer-small-screen {
+        display: flex;
+    }
+
+    .footer-large-screen {
+        display: none;
+    }
+
+    .fa-plus {
+        display: none;
+    }
+
+    .footer-menu-mobile {
+        display: none;
+    }
+
+    .col-xl-2,
+    .col-xl-3 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .footer-head>div {
+        row-gap: 4rem;
+    }
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -298,8 +385,20 @@
     }
 }
 
-@media only screen and (min-width: 1900px) {
+/* @media only screen and (min-width: 1900px) {
     .corner-info {
         font-size: 1.3rem;
+    }
+} */
+
+@media only screen and (min-width: 1400px) {
+    .corner-info {
+        font-size: 1.3rem;
+    }
+
+    .footer-extra-info,
+    .tool-tip-text,
+    .panel ul li {
+        font-size: 1.6rem;
     }
 }
