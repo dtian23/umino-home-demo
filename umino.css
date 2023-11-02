@@ -412,6 +412,10 @@ button {
     line-height: 65px;
 }
 
+.radius-1rem {
+    border-radius: 1rem;
+}
+
 .btn {
     display: inline-block !important;
     color: var(--bg);
