@@ -87,7 +87,7 @@
                     </div>
 
                     <ul
-                        class="d-flex-row col-gap-30 surround-0">
+                        class="d-flex-row align-item-center col-gap-30 surround-0">
                         <li>
                             <div class="d-inline-block">
                                 <a class="d-inline-block none-decoration base-color font-weight-500 margin-0-auto"
@@ -720,8 +720,7 @@
                             </div>
                         </div>
                     </div>
-                    <div
-                        class="slider-nav absolute overflowX">
+                    <div class="slider-nav absolute">
                         <a href="#slider-1"></a>
                         <a href="#slider-2"></a>
                         <a href="#slider-3"></a>
@@ -736,10 +735,10 @@
                         <img class="d-block"
                             src="./media/leanOverModel.svg"
                             alt="Model leans over"
-                            style="width: 100%;">
+                            style="width: 100%; height: 100%;">
                     </div>
                     <button
-                        class="btn-second absolute absolute-sides">Tops</button>
+                        class="btn-second absolute absolute-side">Tops</button>
                 </div>
 
                 <div class="catalog-middle d-flex-row">
@@ -754,7 +753,7 @@
                             </div>
                         </div>
                         <button
-                            class="btn-second absolute absolute-middle-top">Sunglasses</button>
+                            class="btn-second absolute absolute-side">Sunglasses</button>
                     </div>
 
                     <div
@@ -766,7 +765,7 @@
                                 style="width: 100%;">
                         </div>
                         <button
-                            class="btn-second absolute absolute-middle-bottom">Sandals</button>
+                            class="btn-second absolute absolute-side">Sandals</button>
                     </div>
 
                     <div
@@ -778,7 +777,7 @@
                                 style="width: 100%;">
                         </div>
                         <button
-                            class="btn-second absolute absolute-middle-bottom">Bags</button>
+                            class="btn-second absolute absolute-side">Bags</button>
                     </div>
                 </div>
 
@@ -790,7 +789,7 @@
                             style="width: 100%;">
                     </div>
                     <button
-                        class="btn-second absolute absolute-sides">Sneakers</button>
+                        class="btn-second absolute absolute-side">Sneakers</button>
                 </div>
 
             </div>
@@ -820,12 +819,14 @@
                             <div
                                 class="d-flex-column image-category row-gap-16">
                                 <a href="#trending">
-                                    <div class="relative">
+                                    <div
+                                        class="trending-product-container relative hidden">
                                         <div
-                                            class="d-block hidden">
-                                            <img class="trending-product-image d-block"
+                                            class="trending-product-image d-block">
+                                            <img class=" d-block"
                                                 src="./media/top-trending-1.svg"
-                                                alt="top-trending-1">
+                                                alt="top-trending-1"
+                                                style="width: 100%;">
                                         </div>
 
                                         <div
@@ -902,12 +903,14 @@
                             <div
                                 class="d-flex-column image-category row-gap-16">
                                 <a href="trending">
-                                    <div class=" relative">
+                                    <div
+                                        class="trending-product-container relative hidden">
                                         <div
-                                            class="d-block hidden">
-                                            <img class="trending-product-image d-block"
+                                            class="trending-product-image d-block">
+                                            <img class=" d-block"
                                                 src="./media/top-trending-2.svg"
-                                                alt="top-trending-2">
+                                                alt="top-trending-2"
+                                                style="width: 100%;">
                                         </div>
 
                                     </div>
@@ -976,12 +979,14 @@
                             <div
                                 class="d-flex-column image-category row-gap-16">
                                 <a href="#trending">
-                                    <div class=" relative">
+                                    <div
+                                        class="trending-product-container relative hidden">
                                         <div
-                                            class="d-block hidden">
-                                            <img class="trending-product-image d-block"
+                                            class="trending-product-image d-block">
+                                            <img class=" d-block"
                                                 src="./media/top-trending-3.svg"
-                                                alt="top-trending-3">
+                                                alt="top-trending-3"
+                                                style="width: 100%;">
                                             <div
                                                 class="extra-info absolute d-flex-column row-gap-3">
                                                 <p
@@ -1054,12 +1059,14 @@
                             <div
                                 class="d-flex-column image-category row-gap-16">
                                 <a href="#trendingproduct">
-                                    <div class=" relative">
+                                    <div
+                                        class="trending-product-container relative hidden">
                                         <div
-                                            class="d-block hidden">
-                                            <img class="trending-product-image d-block"
+                                            class="trending-product-image d-block">
+                                            <img class="d-block"
                                                 src="./media/top-trending-4.svg"
-                                                alt="top-trending-4">
+                                                alt="top-trending-4"
+                                                style="width: 100%;">
                                         </div>
                                     </div>
                                 </a>
@@ -1126,7 +1133,7 @@
                     </div>
 
                     <div
-                        class="product-banner d-flex-row col-gap-30 row-gap-40">
+                        class="product-banner d-flex-row col-gap-30 row-gap-70 justify-content-between">
                         <div
                             class="banner-item d-flex-column row-gap-8">
                             <div class="hidden">
@@ -1221,13 +1228,17 @@
                         <div
                             class="must-have-list d-flex-row justify-content-between row-gap-30 col-gap-30">
                             <div
-                                class="image-category d-flex-column row-gap-16 relative">
+                                class="image-category d-flex-column row-gap-16">
                                 <a href="#must-have">
                                     <div
-                                        class="d-block hidden">
-                                        <img class="trending-product-image d-block"
-                                            src="./media/must-have-1.svg"
-                                            alt="must-have-1">
+                                        class="trending-product-container relative hidden">
+                                        <div
+                                            class="trending-product-image d-block">
+                                            <img class="d-block"
+                                                src="./media/must-have-1.svg"
+                                                alt="must-have-1"
+                                                style="width: 100%;">
+                                        </div>
                                     </div>
                                 </a>
 
@@ -1287,13 +1298,17 @@
                             </div>
 
                             <div
-                                class="image-category d-flex-column row-gap-16 relative">
+                                class="image-category d-flex-column row-gap-16">
                                 <a href="#must-have">
                                     <div
-                                        class="d-block hidden">
-                                        <img class="trending-product-image d-block"
-                                            src="./media/must-have-2.svg"
-                                            alt="must-have-2">
+                                        class="trending-product-container relative hidden">
+                                        <div
+                                            class="trending-product-image d-block">
+                                            <img class=" d-block"
+                                                src="./media/must-have-2.svg"
+                                                alt="must-have-2"
+                                                style="width: 100%;">
+                                        </div>
                                         <div
                                             class="extra-info absolute d-flex-column row-gap-3">
                                             <p
@@ -1364,18 +1379,23 @@
                             </div>
 
                             <div
-                                class="image-category d-flex-column row-gap-16 relative">
+                                class="image-category d-flex-column row-gap-16">
                                 <a href="#must-have">
                                     <div
-                                        class="d-block hidden">
-                                        <img class="trending-product-image d-block"
-                                            src="./media/must-have-3.svg"
-                                            alt="must-have-3">
+                                        class="trending-product-container relative hidden">
+                                        <div
+                                            class="trending-product-image d-block">
+                                            <img class=" d-block"
+                                                src="./media/must-have-3.svg"
+                                                alt="must-have-2"
+                                                style="width: 100%;">
+                                        </div>
                                         <div
                                             class="extra-info absolute d-flex-column row-gap-3">
                                             <p
                                                 class="corner-info sold-out">
-                                                Sold Out</p>
+                                                Sold Out
+                                            </p>
                                         </div>
                                     </div>
                                 </a>
@@ -1440,10 +1460,14 @@
                                 class="image-category d-flex-column row-gap-16 relative">
                                 <a href="#must-have">
                                     <div
-                                        class="d-block hidden">
-                                        <img class="trending-product-image d-block"
-                                            src="./media/must-have-4.svg"
-                                            alt="must-have-4">
+                                        class="trending-product-container relative hidden">
+                                        <div
+                                            class="trending-product-image d-block">
+                                            <img class=" d-block"
+                                                src="./media/must-have-4.svg"
+                                                alt="must-have-2"
+                                                style="width: 100%;">
+                                        </div>
                                     </div>
                                 </a>
 
@@ -1522,12 +1546,13 @@
 
                         <div
                             class="insta-tail d-flex-row gap-10">
-                            <div
-                                class="image-instagram relative">
-                                <div class="d-block hidden">
-                                    <img class="instagram-product-image d-block"
+                            <div class="image-instagram ">
+                                <div
+                                    class="instagram-product-image d-block relative hidden">
+                                    <img class="d-block"
                                         src="./media/buy-on-insta-1.svg"
-                                        alt="buy-on-insta-1">
+                                        alt="buy-on-insta-1"
+                                        style="width: 100%;">
                                     <button
                                         class="btn-third absolute insta-cart">
                                         <img src="./media/insta-cart.svg"
@@ -1537,12 +1562,13 @@
                             </div>
 
 
-                            <div
-                                class="image-instagram relative">
-                                <div class="d-block hidden">
-                                    <img class="instagram-product-image d-block"
+                            <div class="image-instagram">
+                                <div
+                                    class="instagram-product-image d-block relative hidden">
+                                    <img class="d-block"
                                         src="./media/buy-on-insta-2.svg"
-                                        alt="buy-on-insta-2">
+                                        alt="buy-on-insta-2"
+                                        style="width: 100%;">
                                     <button
                                         class="btn-third absolute insta-cart">
                                         <img src="./media/insta-cart.svg"
@@ -1551,12 +1577,13 @@
                                 </div>
                             </div>
 
-                            <div
-                                class="image-instagram relative">
-                                <div class="d-block hidden">
-                                    <img class="instagram-product-image d-block"
+                            <div class="image-instagram">
+                                <div
+                                    class="instagram-product-image d-block relative hidden">
+                                    <img class="d-block"
                                         src="./media/buy-on-insta-3.svg"
-                                        alt="buy-on-insta-3">
+                                        alt="buy-on-insta-3"
+                                        style="width: 100%;">
                                     <button
                                         class="btn-third absolute insta-cart">
                                         <img src="./media/insta-cart.svg"
@@ -1565,12 +1592,13 @@
                                 </div>
                             </div>
 
-                            <div
-                                class="image-instagram relative">
-                                <div class="d-block hidden">
-                                    <img class="instagram-product-image d-block"
+                            <div class="image-instagram">
+                                <div
+                                    class="instagram-product-image d-block relative hidden">
+                                    <img class="d-block"
                                         src="./media/buy-on-insta-4.svg"
-                                        alt="buy-on-insta-4">
+                                        alt="buy-on-insta-4"
+                                        style="width: 100%;">
                                     <button
                                         class="btn-third absolute insta-cart">
                                         <img src="./media/insta-cart.svg"
@@ -1579,12 +1607,13 @@
                                 </div>
                             </div>
 
-                            <div
-                                class="image-instagram relative">
-                                <div class="d-block hidden">
-                                    <img class="instagram-product-image d-block"
+                            <div class="image-instagram">
+                                <div
+                                    class="instagram-product-image d-block relative hidden">
+                                    <img class="d-block"
                                         src="./media/buy-on-insta-5.svg"
-                                        alt="buy-on-insta-5">
+                                        alt="buy-on-insta-5"
+                                        style="width: 100%;">
                                     <button
                                         class="btn-third absolute insta-cart">
                                         <img src="./media/insta-cart.svg"
@@ -1593,12 +1622,13 @@
                                 </div>
                             </div>
 
-                            <div
-                                class="image-instagram relative">
-                                <div class="d-block hidden">
-                                    <img class="instagram-product-image d-block"
+                            <div class="image-instagram">
+                                <div
+                                    class="instagram-product-image d-block relative hidden">
+                                    <img class="d-block"
                                         src="./media/buy-on-insta-6.svg"
-                                        alt="buy-on-insta-6">
+                                        alt="buy-on-insta-6"
+                                        style="width: 100%;">
                                     <button
                                         class="btn-third absolute insta-cart">
                                         <img src="./media/insta-cart.svg"

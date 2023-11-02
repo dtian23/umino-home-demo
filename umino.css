@@ -213,6 +213,10 @@ button {
     row-gap: 5rem;
 }
 
+.row-gap-70 {
+    row-gap: 7rem;
+}
+
 .row-gap-100 {
     row-gap: 10rem;
 }
@@ -455,7 +459,7 @@ button {
     cursor: pointer;
 }
 
-.absolute-sides {
+.absolute-side {
     bottom: 3rem;
     left: 50%;
     transform: translateX(-50%);
@@ -518,7 +522,8 @@ a:hover {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 3.5rem;
+    line-height: 1;
 }
 
 h2 {
@@ -526,7 +531,6 @@ h2 {
 }
 
 h3 {
-    /* font-size: 0.75rem; */
     font-size: clamp(2.2rem, 3vw, 3rem);
 }
 
@@ -539,14 +543,13 @@ h5 {
     font-weight: 500;
 }
 
-@media only screen and (min-width: 500px) {
-    h1 {
-        font-size: 3.5rem;
-        line-height: 1;
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    h3 {
+        font-size: 3rem;
     }
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 768px) {
     h1 {
         font-size: 5rem;
         line-height: 1;
@@ -557,7 +560,6 @@ h5 {
     }
 
     h3 {
-        /* font-size: 3rem; */
         font-size: clamp(2.2rem, 3vw, 3rem);
     }
 
@@ -609,7 +611,7 @@ h5 {
     }
 
     h4 {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
     h5 {
@@ -628,5 +630,4 @@ h5 {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
-    /* cursor: pointer; */
 }

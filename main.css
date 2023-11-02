@@ -36,6 +36,11 @@
     height: 100%;
 }
 
+.catalog-left,
+.catalog-right {
+    border-radius: 1rem;
+}
+
 .catalog-middle-left,
 .catalog-middle-right,
 .middle {
@@ -43,6 +48,7 @@
     flex: 1 0 auto;
     width: 100%;
     height: 100%;
+    border-radius: 1rem;
 }
 
 .leanOver,
@@ -68,11 +74,20 @@
 .image-category {
     display: flex;
     flex: 1 0 auto;
-    width: calc((100% - 30px*3)/4);
+    width: calc((100% - 30px)/2);
+}
+
+.trending-product-container {
+    display: flex;
+    flex: 0 0 auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
 }
 
 .trending-product-image {
     width: 100%;
+    max-width: 100%;
     height: 100%;
 }
 
@@ -103,6 +118,7 @@
 .banner-image {
     width: 100%;
     max-width: 100%;
+    border-radius: 1rem;
 }
 
 .banner-item span {
@@ -139,6 +155,10 @@
     flex: 1 0 auto;
     width: calc((100% - 3rem)/2);
     height: 100%;
+}
+
+.image-instagram>div {
+    border-radius: 1rem;
 }
 
 .instagram-product-image {
@@ -182,7 +202,6 @@
 
 .slider {
     display: flex;
-    aspect-ratio: auto 1920 / 850;
     height: auto;
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
@@ -198,7 +217,7 @@
 .slider-nav {
     display: flex;
     column-gap: 1rem;
-    bottom: .75rem;
+    bottom: 1.5rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -306,32 +325,25 @@ details>summary::-webkit-details-marker {
     transform: scale(1.1);
 }
 
-@media only screen and (max-width: 350px) {
-
-
-    .mobile-navbar>img {
-        margin-left: 3rem;
-    }
-
+.mobile-navbar>img {
+    margin-left: 3rem;
 }
 
-@media only screen and (min-width: 350px) {
-    .slider-nav {
-        bottom: 1.25rem;
-    }
+.sign-in {
+    display: none;
 }
 
-@media only screen and (max-width: 425px) {
+.mobile-navbar ul {
+    column-gap: 1rem;
+}
+
+@media only screen and (min-width: 576px) {
     .sign-in {
-        display: none;
-    }
-
-    .mobile-navbar ul {
-        column-gap: 1rem;
+        display: flex;
     }
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 576px) {
     .slider-prev {
         left: 3rem;
     }
@@ -347,7 +359,8 @@ details>summary::-webkit-details-marker {
     }
 }
 
-@media only screen and (min-width: 550px) {
+
+@media only screen and (min-width: 576px) {
     .corner-info {
         font-size: 1.2rem;
         padding: 0.5rem 1rem;
@@ -359,9 +372,14 @@ details>summary::-webkit-details-marker {
         width: calc((100% - 1rem*2)/3);
         height: 100%;
     }
+
 }
 
-@media only screen and (min-width: 669px) {
+@media only screen and (min-width: 768px) {
+
+    .slider {
+        aspect-ratio: auto 1920 / 850;
+    }
 
     .main-head,
     .catalog-middle {
@@ -388,13 +406,27 @@ details>summary::-webkit-details-marker {
         flex: 0 0 auto;
         width: calc((100% - 5px)/2);
     }
-}
-
-@media only screen and (min-width: 750px) {
 
     .image-category {
-        flex: 0 0 auto;
+        width: calc((100% - 3rem*3)/4);
     }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .btn-second {
+        width: 15rem;
+        height: 4rem;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .absolute-side {
+        bottom: 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
 
     .product-discription span {
         font-size: 1.6rem;
@@ -402,7 +434,7 @@ details>summary::-webkit-details-marker {
 
     .top-trending>div {
         padding-bottom: 3rem;
-        row-gap: 1rem;
+        row-gap: 2rem;
     }
 
     .btn {
@@ -411,32 +443,47 @@ details>summary::-webkit-details-marker {
     }
 }
 
+:root {
+    --base-font-size: 10px;
+}
+
+.slider-prev a,
+.slider-next a {
+    height: 4rem;
+    width: 4rem;
+}
+
+.product-banner span {
+    font-size: 1.2rem !important;
+}
+
+.to-left-slide,
+.to-right-slide {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 @media only screen and (max-width: 768px) {
-
-    :root {
-        --base-font-size: 10px;
+    .slider {
+        min-height: 55rem;
+        max-width: 768px;
     }
 
-    .slider-prev a,
-    .slider-next a {
-        height: 4rem;
-        width: 4rem;
+    .carousel-img {
+        max-height: 55rem;
+        max-width: 768px;
     }
 
-    .product-banner span {
-        font-size: 1.2rem !important;
+    .black-beanie {
+        width: 100%;
+        min-height: 55rem;
     }
 
-    .to-left-slide,
-    .to-right-slide {
-        top: 50%;
-        transform: translateY(-50%);
+    .black-beanie>img {
+        width: 100%;
+        object-fit: cover;
+        object-position: 55% 0%;
     }
-
-    .image-category {
-        width: calc((100% - 30px)/2);
-    }
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -459,32 +506,18 @@ details>summary::-webkit-details-marker {
     }
 }
 
-@media only screen and (min-width: 1000px) {
-    .top-trending>div {
-        padding-bottom: 5rem;
-        row-gap: 2rem;
-    }
-}
-
 @media only screen and (min-width: 1200px) {
     .btn {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         padding: 2rem 5.6rem;
     }
 }
 
-@media only screen and (max-width: 1024px) {
-
-    /* .btn-second {
-        font-size: 1.2rem;
-        width: 12rem;
-        height: 3.5rem;
-    } */
-
+@media only screen and (min-width: 1201px) {
     .btn-second {
-        font-size: 1rem !important;
-        width: 10rem !important;
-        height: 3rem !important;
+        font-size: 1.4rem;
+        width: 14rem;
+        height: 4.5rem;
     }
 
     .product-banner span {
@@ -504,28 +537,30 @@ details>summary::-webkit-details-marker {
     }
 }
 
-@media only screen and (max-width: 1225px) {
+@media only screen and (min-width: 1200px) {
 
-    .absolute-sides,
-    .absolute-middle-top,
-    .absolute-middle-bottom {
-        bottom: 1rem !important;
+    .absolute-side {
+        bottom: 2rem;
     }
 
+    .top-trending>div {
+        padding-bottom: 5rem;
+    }
 }
 
-@media only screen and (max-width: 1440px) {
-
+@media only screen and (min-width: 1400px) {
     .btn-second {
-        font-size: 1.4rem;
-        width: 14rem;
-        height: 4.5rem;
+        font-size: 1.6rem;
+        width: 18rem;
+        height: 5rem;
     }
 
-    .absolute-sides,
-    .absolute-middle-top,
-    .absolute-middle-bottom {
-        bottom: 2rem;
+    .absolute-side {
+        bottom: 3rem;
+    }
+
+    .slider-nav {
+        bottom: 3rem;
     }
 
 }
