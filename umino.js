@@ -12,25 +12,55 @@ function closeNav() {
     document.getElementById("side-panel").style.transform = "translateX(-100%)";
     document.getElementById("nav-list").style.transform = "translateX(-100%)";
     document.getElementById("sub-nav-shop").style.transform = "translateX(-100%)";
-    document.getElementById("sub-nav").style.transform = "translateX(-100%)";
+    document.getElementById("sub-shop").style.transform = "translateX(-100%)";
+    document.getElementById("sub-nav-product").style.transform = "translateX(-100%)";
+    document.getElementById("sub-product").style.transform = "translateX(-100%)";
+    document.getElementById("sub-nav-page").style.transform = "translateX(-100%)";
+    document.getElementById("sub-page").style.transform = "translateX(-100%)";
+    document.getElementById("sub-nav-blog").style.transform = "translateX(-100%)";
+    document.getElementById("sub-blog").style.transform = "translateX(-100%)";
 }
 
-function openSubNav() {
+function openSubNavShop() {
     document.getElementById("sub-nav-shop").style.transform = "translateX(0)";
-    document.getElementById("sub-nav").style.transform = "translateX(0)";
+    document.getElementById("sub-shop").style.transform = "translateX(0)";
     var className = document.getElementsByClassName('register-shop');
-    for (var index = 0; index < className.length; index++) {
-        className[index].style.transform = "translateX(0)";
-    }
+    className[0].style.transform = "translateX(0)";
+}
+
+function openSubNavProduct() {
+    document.getElementById("sub-nav-product").style.transform = "translateX(0)";
+    document.getElementById("sub-product").style.transform = "translateX(0)";
+    var className = document.getElementsByClassName('register-product');
+    className[0].style.transform = "translateX(0)";
+}
+
+function openSubNavPage() {
+    document.getElementById("sub-nav-page").style.transform = "translateX(0)";
+    document.getElementById("sub-page").style.transform = "translateX(0)";
+    var className = document.getElementsByClassName('register-page');
+    className[0].style.transform = "translateX(0)";
+}
+
+function openSubNavBlog() {
+    document.getElementById("sub-nav-blog").style.transform = "translateX(0)";
+    document.getElementById("sub-blog").style.transform = "translateX(0)";
+    var className = document.getElementsByClassName('register-blog');
+    className[0].style.transform = "translateX(0)";
 }
 
 function goBack() {
     document.getElementById("sub-nav-shop").style.transform = "translateX(-100%)";
-    document.getElementById("sub-nav").style.transform = "translateX(-100%)";
+    document.getElementById("sub-shop").style.transform = "translateX(-100%)";
+    document.getElementById("sub-nav-product").style.transform = "translateX(-100%)";
+    document.getElementById("sub-product").style.transform = "translateX(-100%)";
+    document.getElementById("sub-nav-page").style.transform = "translateX(-100%)";
+    document.getElementById("sub-page").style.transform = "translateX(-100%)";
+    document.getElementById("sub-nav-blog").style.transform = "translateX(-100%)";
+    document.getElementById("sub-blog").style.transform = "translateX(-100%)";
 }
 
 function setGray() {
-    // document.getElementById("overLay").style.opacity = "1";
     document.getElementById("overLay").style.zIndex = "99";
 }
 

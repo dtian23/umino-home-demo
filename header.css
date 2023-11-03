@@ -284,9 +284,12 @@ input[type=text] {
 }
 
 .sub-nav {
-    /* height: 100%; */
-    width: 30rem;
-    background-color: var(--bg);
+    position: absolute;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .grow-fit {
