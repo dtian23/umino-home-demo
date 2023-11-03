@@ -1,6 +1,12 @@
+
+
 function openNav() {
     document.getElementById("side-panel").style.transform = "translateX(0)";
-    document.getElementById("nav-list").style.transform = "translateX(30rem)";
+    document.getElementById("nav-list").style.transform = "translateX(0)";
+    var className = document.getElementsByClassName('nav-item');
+    for (var index = 0; index < className.length; index++) {
+        className[index].style.transform = "translateX(0)";
+    }
 }
 function closeNav() {
     document.getElementById("side-panel").style.transform = "translateX(-100%)";
@@ -12,6 +18,10 @@ function closeNav() {
 function openSubNav() {
     document.getElementById("sub-nav-shop").style.transform = "translateX(0)";
     document.getElementById("sub-nav").style.transform = "translateX(0)";
+    var className = document.getElementsByClassName('register-shop');
+    for (var index = 0; index < className.length; index++) {
+        className[index].style.transform = "translateX(0)";
+    }
 }
 
 function goBack() {

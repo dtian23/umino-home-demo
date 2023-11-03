@@ -732,102 +732,143 @@
                     <div id="side-panel"
                         class="side-panel d-flex-column"
                         style="height: 100%; min-height: 100%;">
-                        <div class="relative"
-                            style="color: var(--bg); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--base-color);">
-                            <span>Menu</span>
-                            <a href="javascript:void(0)"
-                                onclick="closeNav(); enableScroll(); off()">
-                                <i class="fa-solid fa-xmark absolute"
-                                    style="color: #ffffff; right: 2rem; top: 50%; transform: translateY(-50%);"></i>
-                            </a>
-                        </div>
-                        <ul id="nav-list"
-                            class="text-center surround-0"
-                            style="padding-top: 1rem;">
-                            <li class="nav-item">
-                                <a class="none-decoration base-color"
-                                    style="text-align: left;"
-                                    href="#">Home</a>
-                            </li>
 
-                            <li class="nav-item">
-                                <a href="#"
-                                    class="none-decoration dropbtn padding-0"
-                                    onclick="openSubNav()">
-                                    <span
-                                        class="d-flex-row justify-content-between align-item-center col-gap-5">
-                                        <span>Shop</span>
-                                        <i class="fa-solid fa-chevron-right"
-                                            style="color: #000000; font-size: 1.2rem;"></i>
-                                    </span>
+                        <div>
+                            <div class="relative"
+                                style="color: var(--bg); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--base-color);">
+                                <span>Menu</span>
+                                <a href="javascript:void(0)"
+                                    onclick="closeNav(); enableScroll(); off()">
+                                    <i class="fa-solid fa-xmark absolute"
+                                        style="color: #ffffff; right: 2rem; top: 50%; transform: translateY(-50%);"></i>
                                 </a>
+                            </div>
+                        </div>
+
+                        <div class="grow-fit"
+                            style="width: 30rem;">
+                            <ul id="nav-list"
+                                class="text-center surround-0"
+                                style="padding-top: 1rem; width: 30rem;">
+                                <li class="nav-item">
+                                    <a class="none-decoration base-color"
+                                        style="text-align: left;"
+                                        href="#">Home</a>
+                                </li>
+
+                                <li id="nav-item"
+                                    class="nav-item">
+                                    <a href="#"
+                                        class="none-decoration dropbtn padding-0"
+                                        onclick="openSubNav()">
+                                        <span
+                                            class="d-flex-row justify-content-between align-item-center col-gap-5">
+                                            <span>Shop</span>
+                                            <i class="fa-solid fa-chevron-right"
+                                                style="color: #000000; font-size: 1.2rem;"></i>
+                                        </span>
+                                    </a>
+                                </li>
 
                                 <div id="sub-nav-shop"
-                                    class="sub-nav-shop">
-                                    <div class="relative"
-                                        style="color: var(--bg); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--base-color);">
-                                        <a href="javascript:void(0)"
-                                            style="border: none; padding: 0;"
-                                            onclick="goBack()">
-                                            <i class="fa-solid fa-arrow-left absolute"
-                                                style="color: #ffffff; left: 2rem; top: 50%; transform: translateY(-50%);"></i>
-                                        </a>
-                                        <span>Shop</span>
-                                        <a href="javascript:void(0)"
-                                            style="border: none; padding: 0;"
-                                            onclick="closeNav()">
-                                            <i class="fa-solid fa-xmark absolute"
-                                                style="color: #ffffff; right: 2rem; top: 50%; transform: translateY(-50%);"></i>
-                                        </a>
+                                    class="sub-nav-shop d-flex-column">
+                                    <div>
+                                        <div class="relative"
+                                            style="color: var(--bg); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--base-color);">
+                                            <a href="javascript:void(0)"
+                                                style="border: none; padding: 0;"
+                                                onclick="goBack()">
+                                                <i class="fa-solid fa-arrow-left absolute"
+                                                    style="color: #ffffff; left: 2rem; top: 50%; transform: translateY(-50%);"></i>
+                                            </a>
+                                            <span>Shop</span>
+                                            <a href="javascript:void(0)"
+                                                style="border: none; padding: 0;"
+                                                onclick="closeNav(), off()">
+                                                <i class="fa-solid fa-xmark absolute"
+                                                    style="color: #ffffff; right: 2rem; top: 50%; transform: translateY(-50%);"></i>
+                                            </a>
+                                        </div>
                                     </div>
 
-                                    <ul id="sub-nav"
-                                        class="sub-nav"
-                                        style="padding-top: 1rem; transform: translateX(-30rem); z-index: 200;">
-                                        <li
-                                            class="sub-nav-item">
-                                            <a
-                                                href="">Shop</a>
-                                        </li>
-                                        <li
-                                            class="sub-nav-item">
-                                            <a
-                                                href="">Shop</a>
-                                        </li>
-                                        <li
-                                            class="sub-nav-item">
-                                            <a
-                                                href="">Shop</a>
-                                        </li>
-                                        <li
-                                            class="sub-nav-item">
-                                            <a
-                                                href="">Shop</a>
-                                        </li>
-                                        <li
-                                            class="sub-nav-item">
-                                            <a
-                                                href="">Shop</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
+                                    <div class="grow-fit"
+                                        style="width: 30rem;">
+                                        <ul id="sub-nav"
+                                            class="sub-nav absolute justify-content-start"
+                                            style="padding-top: 1rem; transform: translateX(-30rem); z-index: 200;">
+                                            <li
+                                                class="sub-nav-item">
+                                                <a href="">Default
+                                                    layout</a>
+                                            </li>
+                                            <li
+                                                class="sub-nav-item">
+                                                <a href="">Full
+                                                    width</a>
+                                            </li>
+                                            <li
+                                                class="sub-nav-item">
+                                                <a href="">Full
+                                                    container</a>
+                                            </li>
+                                            <li
+                                                class="sub-nav-item">
+                                                <a href="">Product
+                                                    detail
+                                                    digital</a>
+                                            </li>
+                                            <li
+                                                class="sub-nav-item">
+                                                <a href="">Default
+                                                    tab</a>
+                                            </li>
+                                            <li
+                                                class="sub-nav-item">
+                                                <a href="">Tab
+                                                    accordion</a>
+                                            </li>
+                                            <li
+                                                class="sub-nav-item">
+                                                <a href="">Open
+                                                    all
+                                                    tab</a>
+                                            </li>
+                                            <li
+                                                class="sub-nav-item">
+                                                <a href="">Tab
+                                                    accordion</a>
+                                            </li>
+                                        </ul>
+                                    </div>
 
-                            <li class="nav-item">
-                                <a href="#"
-                                    class="none-decoration dropbtn padding-0"
-                                    onclick="openSubNav()">
                                     <span
-                                        class="d-flex-row justify-content-between align-item-center col-gap-5">
-                                        <span>Product</span>
-                                        <i class="fa-solid fa-chevron-right"
-                                            style="color: #000000; font-size: 1.2rem;"></i>
+                                        class="register-shop d-flex-column row-gap-8 justify-content-end"
+                                        style="margin: 2rem 3rem; z-index: 201;">
+                                        <button
+                                            class="btn-login">LOG
+                                            IN</button>
+                                        <button
+                                            class="btn-create-account">CREATE
+                                            ACCOUNT</button>
                                     </span>
-                                </a>
 
-                                <div id="sub-nav-product"
-                                    class="sub-nav-product">
-                                    <!-- <div class="relative"
+                                </div>
+
+                                <li class="nav-item">
+                                    <a href="#"
+                                        class="none-decoration dropbtn padding-0"
+                                        onclick="openSubNav()">
+                                        <span
+                                            class="d-flex-row justify-content-between align-item-center col-gap-5">
+                                            <span>Product</span>
+                                            <i class="fa-solid fa-chevron-right"
+                                                style="color: #000000; font-size: 1.2rem;"></i>
+                                        </span>
+                                    </a>
+
+                                    <div id="sub-nav-product"
+                                        class="sub-nav-product">
+                                        <!-- <div class="relative"
                                         style="color: var(--bg); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--base-color);">
                                         <a href="javascript:void(0)"
                                             style="border: none; padding: 0;"
@@ -844,7 +885,7 @@
                                         </a>
                                     </div> -->
 
-                                    <!-- <ul id="sub-nav"
+                                        <!-- <ul id="sub-nav"
                                         class="sub-nav"
                                         style="padding-top: 1rem; transform: translateX(-30rem); z-index: 200;">
                                         <li
@@ -873,23 +914,23 @@
                                                 href="">Shop</a>
                                         </li>
                                     </ul> -->
-                                </div>
-                            </li>
+                                    </div>
+                                </li>
 
-                            <li class="nav-item">
-                                <a href="#"
-                                    class="none-decoration dropbtn padding-0"
-                                    onclick="openSubNav()">
-                                    <span
-                                        class="d-flex-row justify-content-between align-item-center col-gap-5">
-                                        <span>Page</span>
-                                        <i class="fa-solid fa-chevron-right"
-                                            style="color: #000000; font-size: 1.2rem;"></i>
-                                    </span>
-                                </a>
-                                <div id="sub-nav-page"
-                                    class="sub-nav-page">
-                                    <!-- <div class="relative"
+                                <li class="nav-item">
+                                    <a href="#"
+                                        class="none-decoration dropbtn padding-0"
+                                        onclick="openSubNav()">
+                                        <span
+                                            class="d-flex-row justify-content-between align-item-center col-gap-5">
+                                            <span>Page</span>
+                                            <i class="fa-solid fa-chevron-right"
+                                                style="color: #000000; font-size: 1.2rem;"></i>
+                                        </span>
+                                    </a>
+                                    <div id="sub-nav-page"
+                                        class="sub-nav-page">
+                                        <!-- <div class="relative"
                                         style="color: var(--bg); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--base-color);">
                                         <a href="javascript:void(0)"
                                             style="border: none; padding: 0;"
@@ -906,7 +947,7 @@
                                         </a>
                                     </div> -->
 
-                                    <!-- <ul id="sub-nav"
+                                        <!-- <ul id="sub-nav"
                                         class="sub-nav"
                                         style="padding-top: 1rem; transform: translateX(-30rem); z-index: 200;">
                                         <li
@@ -935,23 +976,23 @@
                                                 href="">Shop</a>
                                         </li>
                                     </ul> -->
-                                </div>
-                            </li>
+                                    </div>
+                                </li>
 
-                            <li class="nav-item">
-                                <a href="#"
-                                    class="none-decoration dropbtn padding-0"
-                                    onclick="openSubNav()">
-                                    <span
-                                        class="d-flex-row justify-content-between align-item-center">
-                                        <span>Blog</span>
-                                        <i class="fa-solid fa-chevron-right"
-                                            style="color: #000000; font-size: 1.2rem;"></i>
-                                    </span>
-                                </a>
-                                <div id="sub-nav-blog"
-                                    class="sub-nav-blog">
-                                    <!-- <div class="relative"
+                                <li class="nav-item">
+                                    <a href="#"
+                                        class="none-decoration dropbtn padding-0"
+                                        onclick="openSubNav()">
+                                        <span
+                                            class="d-flex-row justify-content-between align-item-center">
+                                            <span>Blog</span>
+                                            <i class="fa-solid fa-chevron-right"
+                                                style="color: #000000; font-size: 1.2rem;"></i>
+                                        </span>
+                                    </a>
+                                    <div id="sub-nav-blog"
+                                        class="sub-nav-blog">
+                                        <!-- <div class="relative"
                                         style="color: var(--bg); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--base-color);">
                                         <a href="javascript:void(0)"
                                             style="border: none; padding: 0;"
@@ -968,7 +1009,7 @@
                                         </a>
                                     </div> -->
 
-                                    <!-- <ul id="sub-nav"
+                                        <!-- <ul id="sub-nav"
                                         class="sub-nav"
                                         style="padding-top: 1rem; transform: translateX(-30rem); z-index: 200;">
                                         <li
@@ -997,35 +1038,38 @@
                                                 href="">Shop</a>
                                         </li>
                                     </ul> -->
-                                </div>
-                            </li>
+                                    </div>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="none-decoration base-color"
-                                    style="text-align: left;"
-                                    href="#">
-                                    Sale
-                                </a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="none-decoration base-color"
+                                        style="text-align: left;"
+                                        href="#">
+                                        Sale
+                                    </a>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="none-decoration base-color"
-                                    style="text-align: left;"
-                                    href="#">
-                                    Buy Umino!
-                                </a>
-                            </li>
-                        </ul>
+                                <li class="nav-item">
+                                    <a class="none-decoration base-color"
+                                        style="text-align: left;"
+                                        href="#">
+                                        Buy Umino!
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
 
                         <span
                             class="d-flex-column row-gap-8"
-                            style="margin: 1rem 3rem; padding-top: 10rem;">
+                            style="margin: 2rem 3rem;">
                             <button class="btn-login">LOG
                                 IN</button>
                             <button
                                 class="btn-create-account">CREATE
                                 ACCOUNT</button>
                         </span>
+
                     </div>
 
                     <div
@@ -1038,7 +1082,7 @@
                     <div
                         class="flex-30 justify-content-end">
                         <ul
-                            class="d-flex-row align-item-center col-gap-20">
+                            class="d-flex-row align-item-center">
                             <li>
                                 <a class="d-block" href="">
                                     <img src="./media/Search.svg"
