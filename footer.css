@@ -152,6 +152,11 @@
     display: none;
 }
 
+.footer-menu-mobile>details:hover h5 {
+    padding-left: 1rem;
+    transition: all .4s ease;
+}
+
 .dropbtn-footer {
     background-color: var(--bg);
     color: var(--bodyFashion);

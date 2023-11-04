@@ -72,6 +72,10 @@ button {
     padding: 0;
 }
 
+.cover {
+    object-fit: cover;
+}
+
 .base-color {
     color: var(--base-color);
 }
