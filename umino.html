@@ -41,7 +41,7 @@
                         class="language color-body-second d-flex-row justify-content-between align-item-first-baseline col-gap-25">
                         <span class="max-height-20">Our
                             Stores</span>
-                        <div class="dropdown ">
+                        <div class="dropdown relative">
                             <button
                                 class="dropbtn max-height-20 padding-0 text-center">
                                 <span
@@ -51,13 +51,18 @@
                                         alt="choose language">
                                 </span>
                             </button>
-                            <div class="dropdown-item">
-                                <a href="">Germany</a>
-                                <a href="">French</a>
-                                <a href="">Italy</a>
+                            <div class="dropdown-item"
+                                style="
+                                width: 20vh;">
+                                <a
+                                    href=""><span>Germany</span></a>
+                                <a
+                                    href=""><span>French</span></a>
+                                <a
+                                    href=""><span>Italy</span></a>
                             </div>
                         </div>
-                        <div class="dropdown">
+                        <div class="dropdown relative">
                             <button
                                 class="dropbtn max-height-20 padding-0 text-center">
                                 <span
@@ -68,9 +73,10 @@
                                         alt="choose currency">
                                 </span>
                             </button>
-                            <div class="dropdown-item">
-                                <a href="">Germany
-                                    (Euro)</a>
+                            <div class="dropdown-item"
+                                style="width: 40vh;">
+                                <a href=""><span>Germany
+                                        (Euro)</span></a>
                             </div>
                         </div>
                     </div>
@@ -1249,7 +1255,7 @@
         </header>
 
         <main>
-            <section class="carousel-container mb-5">
+            <section class="carousel-container">
                 <div class="slider-wrapper ">
                     <div class="slider">
                         <div id="slider-1"
@@ -1367,7 +1373,7 @@
                 </div>
             </section>
 
-            <div class="main-head d-flex-row">
+            <div class="main-head-screen d-flex-row">
                 <div class="catalog-left relative hidden">
                     <div class="leanOver d-block ">
                         <img class="d-block"
@@ -1432,6 +1438,81 @@
 
             </div>
 
+            <div
+                class="main-head-mobile d-flex-column gap-10">
+
+                <div class="middle hidden relative">
+                    <div class="glasses">
+                        <div class="d-block">
+                            <img class="d-block"
+                                src="./media/glasses.svg"
+                                alt="Glasses"
+                                style="width: 100%;">
+                        </div>
+                    </div>
+                    <button
+                        class="btn-second absolute absolute-side">Sunglasses</button>
+                </div>
+
+                <div class="d-flex-row gap-10">
+
+                    <div
+                        class="d-flex-column gap-10 col-head-2">
+                        <div
+                            class="catalog-left relative hidden">
+                            <div class="leanOver d-block ">
+                                <img class="d-block"
+                                    src="./media/leanOverModel.svg"
+                                    alt="Model leans over"
+                                    style="width: 100%;">
+                            </div>
+                            <button
+                                class="btn-second absolute absolute-side">Tops</button>
+                        </div>
+
+                        <div
+                            class="catalog-middle-left relative hidden">
+                            <div class="sandal d-block">
+                                <img class="d-block"
+                                    src="./media/sandal.svg"
+                                    alt="Sandal"
+                                    style="width: 100%;">
+                            </div>
+                            <button
+                                class="btn-second absolute absolute-side">Sandals</button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="d-flex-column gap-10 col-head-2">
+                        <div
+                            class="catalog-middle-right relative hidden">
+                            <div class="bag d-block ">
+                                <img class="d-block"
+                                    src="./media/bag.svg"
+                                    alt="Bag"
+                                    style="width: 100%;">
+                            </div>
+                            <button
+                                class="btn-second absolute absolute-side">Bags</button>
+                        </div>
+
+                        <div
+                            class="catalog-right relative hidden">
+                            <div class="sneaker d-block">
+                                <img class="d-block"
+                                    src="./media/sneaker.svg"
+                                    alt="Sneaker"
+                                    style="width: 100%;">
+                            </div>
+                            <button
+                                class="btn-second absolute absolute-side">Sneakers</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
             <div class="main-tail">
                 <div
                     class="container-main d-flex-column justify-content-around row-gap-100">
@@ -1452,7 +1533,7 @@
                         </div>
 
                         <div
-                            class="top-trending-list d-flex-row justify-content-between gap-30">
+                            class="top-trending-list d-flex-row justify-content-between">
 
                             <div
                                 class="d-flex-column image-category row-gap-16">
@@ -1867,7 +1948,7 @@
                         </div>
 
                         <div
-                            class="must-have-list d-flex-row justify-content-between row-gap-30 col-gap-30">
+                            class="must-have-list d-flex-row justify-content-between">
                             <div
                                 class="image-category d-flex-column row-gap-16">
                                 <a href="#must-have">
@@ -2171,7 +2252,7 @@
                     </div>
 
                     <div
-                        class="shop-by-gram d-flex-column row-gap-40 pt-100">
+                        class="shop-by-gram d-flex-column row-gap-40">
                         <div
                             class="d-flex-column text-center row-gap-5 ">
                             <h2
@@ -2387,7 +2468,7 @@
                         </div>
 
                         <details
-                            class="hot-categories d-flex-column col-xl-2 column">
+                            class="hot-categories d-flex-column col-xl-2 pointer column">
                             <summary
                                 class="d-flex-row justify-content-between align-item-center">
                                 <h5 class="accordion">
@@ -2435,7 +2516,7 @@
                         </details>
 
                         <details
-                            class="customer-service d-flex-column col-xl-2 column ">
+                            class="customer-service d-flex-column col-xl-2 pointer column ">
                             <summary
                                 class="d-flex-row justify-content-between align-item-center">
                                 <h5 class="accordion">
@@ -2495,7 +2576,7 @@
                         </details>
 
                         <details
-                            class="newsletter d-flex-column col-xl-3 column">
+                            class="newsletter d-flex-column col-xl-3 pointer column">
                             <summary
                                 class="d-flex-row justify-content-between align-item-center">
                                 <h5 class="accordion">
@@ -2770,22 +2851,48 @@
 
                 <div
                     class="footer-large-screen footer-tail d-flex-row justify-content-between color-body-fashion">
-                    <div class="d-flex-row col-gap-20">
+                    <div
+                        class="d-flex-row align-item-center col-gap-20">
                         <div
-                            class="d-flex-row justify-content-between align-item-center col-gap-8">
-                            <span
-                                class="footer-extra-info">English</span>
-                            <img src="./media/dropdown_bodysecond.svg"
-                                alt="arrow drop">
+                            class="dropdown relative pointer">
+                            <button
+                                class="dropbtn-footer max-height-20 padding-0 text-center">
+                                <span
+                                    class="d-flex-row justify-content-between align-item-center col-gap-8">
+                                    <span>English</span>
+                                    <img src="./media/dropdown_bodysecond.svg"
+                                        alt="choose language">
+                                </span>
+                            </button>
+                            <div class="dropdown-item-footer"
+                                style="
+                                width: 20vh;">
+                                <a
+                                    href=""><span>Germany</span></a>
+                                <a
+                                    href=""><span>French</span></a>
+                                <a
+                                    href=""><span>Italy</span></a>
+                            </div>
                         </div>
+
                         <div
-                            class="d-flex-row justify-content-between align-item-center col-gap-8">
-                            <span
-                                class="footer-extra-info">United
-                                State (USD
-                                $)</span>
-                            <img src="./media/dropdown_bodysecond.svg"
-                                alt="arrow drop">
+                            class="dropdown relative pointer">
+                            <button
+                                class="dropbtn-footer max-height-20 padding-0 text-center">
+                                <span
+                                    class="d-flex-row justify-content-between align-item-center col-gap-8">
+                                    <span>United State (USD
+                                        $)</span>
+                                    <img src="./media/dropdown_bodysecond.svg"
+                                        alt="choose currency">
+                                </span>
+                            </button>
+                            <div class="dropdown-item-footer"
+                                style="width: 40vh;">
+                                <a href=""><span>Germany
+                                        (Euro)</span></a>
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -2818,20 +2925,46 @@
                         class=" d-flex-row justify-content-between ">
                         <div class="d-flex-row col-gap-20">
                             <div
-                                class="d-flex-row justify-content-between align-item-center col-gap-8">
-                                <span
-                                    class="footer-extra-info">English</span>
-                                <img src="./media/dropdown_bodysecond.svg"
-                                    alt="arrow drop">
+                                class="dropdown relative pointer">
+                                <button
+                                    class="dropbtn-footer max-height-20 padding-0 text-center">
+                                    <span
+                                        class="d-flex-row justify-content-between align-item-center col-gap-8">
+                                        <span>English</span>
+                                        <img src="./media/dropdown_bodysecond.svg"
+                                            alt="choose language">
+                                    </span>
+                                </button>
+                                <div class="dropdown-item-footer"
+                                    style="
+                                width: 20vh;">
+                                    <a
+                                        href=""><span>Germany</span></a>
+                                    <a
+                                        href=""><span>French</span></a>
+                                    <a
+                                        href=""><span>Italy</span></a>
+                                </div>
                             </div>
+
                             <div
-                                class="d-flex-row justify-content-between align-item-center col-gap-8">
-                                <span
-                                    class="footer-extra-info">United
-                                    State (USD
-                                    $)</span>
-                                <img src="./media/dropdown_bodysecond.svg"
-                                    alt="arrow drop">
+                                class="dropdown relative pointer">
+                                <button
+                                    class="dropbtn-footer max-height-20 padding-0 text-center">
+                                    <span
+                                        class="d-flex-row justify-content-between align-item-center col-gap-8">
+                                        <span>United State
+                                            (USD
+                                            $)</span>
+                                        <img src="./media/dropdown_bodysecond.svg"
+                                            alt="choose currency">
+                                    </span>
+                                </button>
+                                <div class="dropdown-item-footer"
+                                    style="width: 40vh;">
+                                    <a href=""><span>Germany
+                                            (Euro)</span></a>
+                                </div>
                             </div>
                         </div>
 
@@ -2868,20 +3001,45 @@
                     class="footer-extra-small-screen footer-tail d-flex-column justify-content-center align-item-center color-body-fashion row-gap-20">
                     <div class="d-flex-row col-gap-20">
                         <div
-                            class="d-flex-row justify-content-between align-item-center col-gap-8">
-                            <span
-                                class="footer-extra-info">English</span>
-                            <img src="./media/dropdown_bodysecond.svg"
-                                alt="arrow drop">
+                            class="dropdown relative pointer">
+                            <button
+                                class="dropbtn-footer max-height-20 padding-0 text-center">
+                                <span
+                                    class="d-flex-row justify-content-between align-item-center col-gap-8">
+                                    <span>English</span>
+                                    <img src="./media/dropdown_bodysecond.svg"
+                                        alt="choose language">
+                                </span>
+                            </button>
+                            <div class="dropdown-item-footer"
+                                style="
+                                width: 20vh;">
+                                <a
+                                    href=""><span>Germany</span></a>
+                                <a
+                                    href=""><span>French</span></a>
+                                <a
+                                    href=""><span>Italy</span></a>
+                            </div>
                         </div>
+
                         <div
-                            class="d-flex-row justify-content-between align-item-center col-gap-8">
-                            <span
-                                class="footer-extra-info">United
-                                State (USD
-                                $)</span>
-                            <img src="./media/dropdown_bodysecond.svg"
-                                alt="arrow drop">
+                            class="dropdown relative pointer">
+                            <button
+                                class="dropbtn-footer max-height-20 padding-0 text-center">
+                                <span
+                                    class="d-flex-row justify-content-between align-item-center col-gap-8">
+                                    <span>United State (USD
+                                        $)</span>
+                                    <img src="./media/dropdown_bodysecond.svg"
+                                        alt="choose currency">
+                                </span>
+                            </button>
+                            <div class="dropdown-item-footer"
+                                style="width: 40vh;">
+                                <a href=""><span>Germany
+                                        (Euro)</span></a>
+                            </div>
                         </div>
                     </div>
 

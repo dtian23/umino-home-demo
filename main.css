@@ -6,7 +6,7 @@
 .container-main {
     margin-left: auto;
     margin-right: auto;
-    padding: 0 3rem;
+    padding: 0 1.5rem;
     max-width: 147rem;
 }
 
@@ -23,7 +23,17 @@
     text-align: start;
 }
 
-.main-head,
+.main-head-mobile {
+    padding: 0 1.5rem;
+}
+
+.col-head-2 {
+    display: flex;
+    flex: 0 0 auto;
+    width: calc((100% - 10px)/2);
+}
+
+.main-head-screen,
 .catalog-middle {
     gap: .5rem;
 }
@@ -34,7 +44,7 @@
     display: flex;
     flex: 0 0 auto;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .catalog-left,
@@ -48,7 +58,7 @@
     display: flex;
     flex: 1 0 auto;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     border-radius: 1rem;
 }
 
@@ -70,6 +80,11 @@
     width: 100%;
     max-width: 100%;
     height: 100%;
+}
+
+.top-trending-list,
+.must-have-list {
+    gap: 1.5rem;
 }
 
 .image-category {
@@ -169,6 +184,7 @@
 
 .shop-by-gram {
     border-top: 1px solid #f6eaea;
+    padding-top: 8rem;
 }
 
 .corner-info {
@@ -193,6 +209,7 @@
 
 .carousel-container {
     padding: 0;
+    margin-bottom: 1rem;
 }
 
 .slider-wrapper {
@@ -287,6 +304,22 @@
     background-color: black;
 }
 
+.main-head-screen {
+    display: none;
+}
+
+.main-head-mobile {
+    display: flex;
+}
+
+.product-top-trending {
+    margin-top: 8rem;
+}
+
+.main-tail>div {
+    row-gap: 8rem;
+}
+
 .product-discription span {
     font-size: 1.2rem;
 }
@@ -297,7 +330,7 @@
 }
 
 .insta-tail {
-    gap: .5rem;
+    gap: 1.5rem;
 }
 
 details>summary {
@@ -338,9 +371,34 @@ details>summary::-webkit-details-marker {
     display: none;
 }
 
+.btn-second {
+    width: 12rem;
+    height: 3rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 426px) {
+
+    .product-discription span {
+        font-size: 1.4rem;
+    }
+
+    .btn-second {
+        width: 15rem;
+        height: 4rem;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+}
+
 @media only screen and (min-width: 576px) {
     .sign-in {
         display: flex;
+    }
+
+    .insta-tail {
+        gap: 3rem;
     }
 }
 
@@ -367,15 +425,27 @@ details>summary::-webkit-details-marker {
         padding: 0.5rem 1rem;
     }
 
+    .product-discription span {
+        font-size: 1.6rem;
+    }
+
+    .banner-item {
+        display: flex;
+        flex: 0 0 auto;
+        width: calc((100% - 30px*2)/3);
+        row-gap: 2rem;
+    }
+
     .image-instagram {
         display: flex;
         flex: 0 0 auto;
-        width: calc((100% - 1.5rem*2)/3);
+        width: calc((100% - 30px*2)/3);
         height: 100%;
     }
 
-    .insta-tail {
-        gap: 1.5rem;
+    .top-trending-list,
+    .must-have-list {
+        gap: 3rem;
     }
 }
 
@@ -389,9 +459,12 @@ details>summary::-webkit-details-marker {
         text-align: center;
     }
 
-    .main-head,
-    .catalog-middle {
-        gap: .5rem;
+    .main-head-screen {
+        display: flex;
+    }
+
+    .main-head-mobile {
+        display: none;
     }
 
     .catalog-left,
@@ -420,13 +493,13 @@ details>summary::-webkit-details-marker {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-    .btn-second {
+@media only screen and (max-width: 1200px) {
+    /* .btn-second {
         width: 15rem;
         height: 4rem;
         text-align: center;
         font-size: 1.4rem;
-    }
+    } */
 
     .absolute-side {
         bottom: 1rem;
@@ -436,9 +509,6 @@ details>summary::-webkit-details-marker {
 
 @media only screen and (min-width: 768px) {
 
-    .product-discription span {
-        font-size: 1.6rem;
-    }
 
     .top-trending>div {
         padding-bottom: 3rem;
@@ -462,7 +532,7 @@ details>summary::-webkit-details-marker {
 }
 
 .product-banner span {
-    font-size: 1.2rem !important;
+    font-size: 1.6rem;
 }
 
 .to-left-slide,
@@ -495,12 +565,11 @@ details>summary::-webkit-details-marker {
 }
 
 @media only screen and (min-width: 768px) {
-    .banner-item {
-        display: flex;
-        flex: 0 0 auto;
-        width: calc((100% - 30px*2)/3);
-        row-gap: 2rem;
+
+    .carousel-container {
+        margin-bottom: .5rem;
     }
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -514,12 +583,18 @@ details>summary::-webkit-details-marker {
     .insta-tail {
         gap: .5rem;
     }
+
 }
 
 @media only screen and (min-width: 1200px) {
     .btn {
         font-size: 1.6rem;
         padding: 2rem 5.6rem;
+    }
+
+    .container-main,
+    .main-head-mobile {
+        padding: 0 3rem;
     }
 }
 
@@ -528,18 +603,6 @@ details>summary::-webkit-details-marker {
         font-size: 1.4rem;
         width: 14rem;
         height: 4.5rem;
-    }
-
-    .product-banner span {
-        font-size: 1.4rem;
-    }
-
-    .product-top-trending {
-        margin-top: 8rem;
-    }
-
-    .main-tail>div {
-        row-gap: 8rem;
     }
 
     .shop-by-gram {
@@ -556,6 +619,8 @@ details>summary::-webkit-details-marker {
     .top-trending>div {
         padding-bottom: 5rem;
     }
+
+
 }
 
 @media only screen and (min-width: 1400px) {
@@ -573,4 +638,15 @@ details>summary::-webkit-details-marker {
         bottom: 3rem;
     }
 
+    .product-top-trending {
+        margin-top: 10rem;
+    }
+
+    .main-tail>div {
+        row-gap: 10rem;
+    }
+
+    .shop-by-gram {
+        padding-top: 10rem;
+    }
 }

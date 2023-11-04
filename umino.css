@@ -170,6 +170,10 @@ button {
     gap: 1rem;
 }
 
+.gap-20 {
+    gap: 2rem;
+}
+
 .gap-30 {
     gap: 3rem;
 }
@@ -355,6 +359,10 @@ button {
     margin-bottom: .5rem;
 }
 
+.mb-30 {
+    margin-bottom: 3rem;
+}
+
 .mb-100 {
     margin-bottom: 10rem;
 }
@@ -511,6 +519,9 @@ button {
 }
 
 /********************************************************************/
+#wrapper {
+    min-width: 320px;
+}
 
 ul {
     margin: 0;
@@ -540,7 +551,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 
 h5 {
@@ -568,10 +579,6 @@ h5 {
         font-size: clamp(2.2rem, 3vw, 3rem);
     }
 
-    h4 {
-        font-size: 1.2rem;
-    }
-
     h5 {
         font-size: 1.8rem;
     }
@@ -588,12 +595,7 @@ h5 {
     }
 
     h3 {
-        /* font-size: 3rem; */
         font-size: clamp(2.2rem, 3vw, 3rem);
-    }
-
-    h4 {
-        font-size: 1.6rem;
     }
 
     h5 {

@@ -1,14 +1,14 @@
 .container-footer {
     margin-left: auto;
     margin-right: auto;
-    padding: 10rem 3rem 4rem 3rem;
+    padding: 8rem 1.5rem 4rem 1.5rem;
     max-width: 147rem;
 }
 
 .container-footer-tail {
     margin-left: auto;
     margin-right: auto;
-    padding: 0 3rem 1rem 3rem;
+    padding: 0 1.5rem 1rem 1.5rem;
     max-width: 147rem;
 }
 
@@ -43,8 +43,8 @@
 }
 
 .tool-tip img {
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 3.2rem;
+    width: 3.2rem;
 }
 
 .contact>div {
@@ -150,6 +150,48 @@
 
 .footer-menu-desktop {
     display: none;
+}
+
+.dropbtn-footer {
+    background-color: var(--bg);
+    color: var(--bodyFashion);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    height: 2.5rem;
+}
+
+.dropbtn-footer>span {
+    font-size: 1.4rem;
+}
+
+.dropdown-item-footer {
+    display: none;
+    position: absolute;
+    background-color: var(--bg);
+    left: 0;
+    bottom: 2rem;
+    /* padding-top: 2rem;
+    padding-bottom: 1rem; */
+    padding: 2rem 0 1rem 0;
+    z-index: 1;
+}
+
+.dropdown-item-footer a {
+    float: none;
+    color: var(--bodyFashion);
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border: none;
+}
+
+.dropdown-item-footer a:hover span {
+    padding-left: 1rem;
+    transition: all 0.4s ease-in-out;
+    color: var(--base-color);
 }
 
 @media only screen and (min-width: 576px) {
@@ -278,9 +320,21 @@
         flex: 0 0 auto;
         width: 16.6666667%;
     }
+
+    .container-footer {
+        padding: 10rem 3rem 4rem 3rem;
+    }
+
+    .container-footer-tail {
+        padding: 0 3rem 1rem 3rem;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
+    /* .container-footer {
+        padding: 10rem 1.5rem 4rem 1.5rem;
+    } */
+
     .corner-info {
         font-size: 1.3rem;
     }
@@ -288,6 +342,14 @@
     .footer-extra-info,
     .tool-tip-text,
     .panel ul li {
+        font-size: 1.6rem;
+    }
+
+    .dropbtn-footer>span {
+        font-size: 1.6rem;
+    }
+
+    .dropdown-item-footer a {
         font-size: 1.6rem;
     }
 }
