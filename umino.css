@@ -287,6 +287,10 @@ button {
     text-align: center;
 }
 
+.text-right {
+    text-align: right;
+}
+
 .relative {
     position: relative;
 }
@@ -433,8 +437,8 @@ button {
     display: inline-block !important;
     color: var(--bg);
     background-color: var(--base-color);
-    padding: 0.9rem 1.8rem;
-    font-size: 0.8rem;
+    padding: 1.5rem 2rem;
+    font-size: 1rem;
     font-weight: 600;
     border: none;
     border-radius: 30px;
