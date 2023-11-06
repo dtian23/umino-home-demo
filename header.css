@@ -29,7 +29,7 @@ input[type=text] {
 }
 
 #search-check:checked+input[type=text] {
-    transition: all 0.6s ease-out;
+    transition: all 0.4s ease-out;
     display: block;
 }
 
@@ -57,8 +57,6 @@ input[type=text] {
     position: absolute;
     background-color: var(--base-color);
     right: 0;
-    /* padding-top: 2rem;
-    padding-bottom: 1rem; */
     padding: 2rem .5rem 1rem .4rem;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -164,11 +162,11 @@ input[type=text] {
     color: var(--base-color);
     background-color: var(--bg);
     padding-left: 1.5rem;
-    transition: all 0.3s ease-out;
+    transition: all 0.4s ease-out;
 }
 
 .mega-menu-shop-item a>div {
-    transition: 0.5s all ease-in-out;
+    transition: 0.4s all ease-in-out;
 }
 
 .mega-menu-shop-item a>div:hover {
@@ -278,15 +276,24 @@ input[type=text] {
     border-bottom: 1px solid #EBEBEB;
 }
 
-.nav-item a:hover {
+/* .nav-item a:hover {
     color: var(--base-color);
     background-color: #EBEBEB;
     transition: all 0.4s ease-out;
+} */
+
+.nav-item:hover,
+.sub-nav-item:hover {
+    color: var(--base-color);
+    background-color: #EBEBEB;
+    transition: 0.4s ease-out;
 }
 
-#nav-list li:hover {
+/* #nav-list li:hover {
+    color: var(--base-color);
     background-color: #EBEBEB;
-}
+    transition: all 0.4s ease-out;
+} */
 
 .sub-nav-shop {
     position: fixed;
