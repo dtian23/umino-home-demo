@@ -13,7 +13,7 @@
 .fixed-mobile-nav {
     position: fixed;
     flex-wrap: nowrap;
-    top: 88%;
+    top: 90%;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
