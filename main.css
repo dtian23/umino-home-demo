@@ -368,7 +368,6 @@ details>summary::-webkit-details-marker {
 
 .instagram-product-image,
 .trending-product-image,
-/* .banner-image, */
 .leanOver,
 .glasses,
 .bag,
@@ -379,7 +378,6 @@ details>summary::-webkit-details-marker {
 
 .instagram-product-image:hover,
 .trending-product-image:hover,
-/* .banner-image:hover, */
 .leanOver:hover,
 .glasses:hover,
 .bag:hover,
@@ -409,6 +407,18 @@ details>summary::-webkit-details-marker {
 
 .screen-banner {
     display: flex;
+}
+
+@media only screen and (max-width: 469px),
+(min-width: 992px) {
+    .banner-image:hover {
+        transform: scale(1.1);
+    }
+
+    .banner-image {
+        transition: 0.5s all ease-in-out;
+    }
+
 }
 
 @media only screen and (min-width: 426px) {
