@@ -407,6 +407,12 @@ header {
     column-gap: 1rem;
 }
 
+@media only screen and (min-width: 425px) {
+    .icon-nav {
+        font-size: 1.2rem;
+    }
+}
+
 @media only screen and (min-width: 576px) {
     .container-header {
         margin-left: auto;
@@ -421,6 +427,7 @@ header {
     .mobile-navbar ul {
         column-gap: 2rem;
     }
+
 }
 
 .language {
