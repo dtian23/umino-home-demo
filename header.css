@@ -440,12 +440,15 @@ header {
         justify-content: space-between;
     }
 
-    .fixed-mobile-nav {
-        display: none;
-    }
-
     .carousel-container {
         margin-top: 10.6rem;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+
+    .fixed-mobile-nav {
+        display: none;
     }
 }
 
