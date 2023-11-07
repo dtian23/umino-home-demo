@@ -31,6 +31,15 @@
     font-weight: 500;
 }
 
+.icon-nav a {
+    color: var(--base-color);
+}
+
+.icon-nav:hover {
+    cursor: pointer;
+    background-color: #EBEBEB;
+}
+
 .icon-nav svg {
     font-size: .5rem;
 }
