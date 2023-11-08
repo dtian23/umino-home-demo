@@ -23,7 +23,7 @@
                 <div
                     class="topLink container-header d-flex-row margin-y-0 font-header">
                     <div
-                        class="phoneMail d-flex-row col-gap-25 justify-content-between align-item-center max-height-20">
+                        class="phoneMail d-flex-row justify-content-between align-item-center max-height-20">
                         <span>+222-1800-2628</span>
                         <span>blueskytechcompany@gmail.com</span>
                     </div>
@@ -38,7 +38,7 @@
                     </div>
 
                     <div
-                        class="language color-body-second d-flex-row justify-content-between align-item-first-baseline col-gap-25">
+                        class="language color-body-second d-flex-row justify-content-between align-item-first-baseline">
                         <span class="max-height-20">Our
                             Stores</span>
                         <div class="dropdown relative">
@@ -233,7 +233,7 @@
                     </div>
 
                     <ul
-                        class="d-flex-row align-item-center col-gap-30 surround-0">
+                        class="d-flex-row align-item-center surround-0">
                         <li>
                             <div class=" d-inline-block">
                                 <a class="nav-link d-inline-block none-decoration base-color font-weight-500 margin-0-auto"
@@ -254,7 +254,7 @@
                                     </span>
                                 </a>
                                 <div
-                                    class="dropdown-item-mega-shop justify-content-center">
+                                    class="dropdown-item-mega-shop menu-animation justify-content-center">
                                     <div
                                         class="mega-menu-shop d-flex-row justify-content-center">
                                         <div
@@ -344,10 +344,10 @@
 
                                         <div
                                             class="mega-menu-shop-item mega-menu-image">
-                                            <div class="relative hidden"
+                                            <div class="hidden"
                                                 style="border-radius: 1rem;">
-                                                <a
-                                                    href="#/">
+                                                <a href="#/"
+                                                    class="relative">
                                                     <div
                                                         class=" d-block">
                                                         <img class="d-block"
@@ -366,10 +366,10 @@
 
                                         <div
                                             class="mega-menu-shop-item mega-menu-image">
-                                            <div class="relative hidden"
+                                            <div class="hidden"
                                                 style="border-radius: 1rem;">
-                                                <a
-                                                    href="#/">
+                                                <a href="#/"
+                                                    class="relative">
                                                     <div
                                                         class="d-block">
                                                         <img class="d-block"
@@ -401,7 +401,7 @@
                                     </span>
                                 </a>
                                 <div
-                                    class="d-flex dropdown-item-mega-product justify-content-center">
+                                    class="d-flex dropdown-item-mega-product menu-animation justify-content-center">
                                     <div
                                         class="mega-product d-flex-row justify-content-center">
                                         <div
@@ -801,7 +801,7 @@
                     </ul>
 
                     <ul
-                        class="d-flex-row align-item-center col-gap-20 nav-right">
+                        class="d-flex-row align-item-center nav-right">
                         <li
                             class="d-flex-row justify-content-center align-item-center col-gap-10">
                             <label for="search-check"
@@ -857,7 +857,8 @@
                     <div
                         class="flex-30 justify-content-start">
                         <a href="javascript:void(0)"
-                            onclick="openNav();disableScroll();setGray(); on()">
+                            onclick="openNav();disableScroll();setGray(); on()"
+                            style="padding: 0 1.5rem;">
                             <i class="fa fa-solid fa-bars"
                                 style="color: #000000;"></i>
                         </a>
@@ -1352,11 +1353,11 @@
                                         class="d-block">
                                 </a>
                             </li>
-                            <li>
+                            <li class="sign-in">
                                 <a class="d-block" href="">
                                     <img src="./media/Login.svg"
                                         alt="Sign in"
-                                        class="sign-in d-block">
+                                        class="d-block">
                                 </a>
                             </li>
 
@@ -1396,9 +1397,12 @@
                                         take
                                         it off.</h4>
                                 </div>
-                                <button
-                                    class="btn pointer">EXPLORE
-                                    NOW</button>
+                                <a
+                                    class="explore-now btn pointer">
+                                    <span
+                                        style="z-index: 10;">EXPLORE
+                                        NOW</span>
+                                </a>
                             </div>
                             <div
                                 class="slider-prev absolute">
@@ -1431,9 +1435,9 @@
                                         take
                                         it off.</h4>
                                 </div>
-                                <button
-                                    class="font-size-12 btn pointer">EXPLORE
-                                    NOW</button>
+                                <a
+                                    class="explore-now font-size-12 btn pointer">EXPLORE
+                                    NOW</a>
                             </div>
                             <div
                                 class="slider-prev absolute">
@@ -1466,9 +1470,9 @@
                                         take
                                         it off.</h4>
                                 </div>
-                                <button
-                                    class="font-size-12 btn pointer">EXPLORE
-                                    NOW</button>
+                                <a
+                                    class="explore-now font-size-12 btn pointer">EXPLORE
+                                    NOW</a>
                             </div>
                             <div
                                 class="slider-prev absolute">
@@ -2872,9 +2876,9 @@
                                         autocomplete="off"
                                         spellcheck="false"
                                         required>
-                                    <button
-                                        class="btn font-size-12 pointer">SUBCRIBE
-                                    </button>
+                                    <a
+                                        class="subcribe btn font-size-12 pointer">SUBCRIBE
+                                    </a>
                                 </div>
                             </div>
 
@@ -3099,9 +3103,9 @@
                                         autocomplete="off"
                                         spellcheck="false"
                                         required>
-                                    <button
-                                        class="btn font-size-12 pointer">SUBCRIBE
-                                    </button>
+                                    <a
+                                        class="subcribe btn font-size-12 pointer">SUBCRIBE
+                                    </a>
                                 </div>
                             </div>
 
@@ -3126,7 +3130,7 @@
                             </button>
                             <div class="dropdown-item-footer"
                                 style="
-                                width: 20vh;">
+                                width: 10vh;">
                                 <a
                                     href=""><span>Germany</span></a>
                                 <a
@@ -3149,7 +3153,7 @@
                                 </span>
                             </button>
                             <div class="dropdown-item-footer"
-                                style="width: 40vh;">
+                                style="width: 20vh;">
                                 <a href=""><span>Germany
                                         (Euro)</span></a>
                             </div>
@@ -3183,7 +3187,8 @@
                     class="footer-small-screen footer-tail d-flex-column color-body-fashion row-gap-30">
                     <div
                         class=" d-flex-row justify-content-between ">
-                        <div class="d-flex-row col-gap-20">
+                        <div
+                            class="d-flex-row col-gap-20 align-item-center">
                             <div
                                 class="dropdown relative pointer">
                                 <button

@@ -440,14 +440,14 @@ button {
     padding: 1.5rem 2rem;
     font-size: 1rem;
     font-weight: 600;
-    border: none;
+    /* border: none; */
     border-radius: 30px;
 }
 
-.btn:hover {
+/* .btn:hover {
     background-color: rgb(215, 215, 215);
     color: black;
-}
+} */
 
 .btn-second {
     color: #111111;

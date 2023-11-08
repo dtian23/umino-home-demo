@@ -598,6 +598,46 @@ details>summary::-webkit-details-marker {
 
 @media only screen and (min-width: 768px) {
 
+    .explore-now {
+        display: block;
+        color: var(--base-color);
+        border: 1px solid var(--base-color);
+        position: relative;
+        overflow: hidden;
+        background: transparent;
+        transition: all .35s;
+    }
+
+    .explore-now:before,
+    .explore-now:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: -100%;
+        left: 0;
+        background: var(--base-color);
+        z-index: -1;
+        transition: all .35s;
+    }
+
+    .explore-now:before {
+        opacity: .5;
+    }
+
+    .explore-now:after {
+        transition-delay: .2s;
+    }
+
+    .explore-now:hover {
+        color: var(--bg);
+    }
+
+    .explore-now:hover:before,
+    .explore-now:hover:after {
+        top: 0;
+    }
+
     .top-trending {
         left: 13.38888888%;
     }

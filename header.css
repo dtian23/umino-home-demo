@@ -1,13 +1,13 @@
 .container-header {
     margin-left: auto;
     margin-right: auto;
-    padding: 0.6rem 1.5rem;
+    padding: 0.6rem 0;
 }
 
 .container-header-tail {
     margin-left: auto;
     margin-right: auto;
-    padding: 2rem 1.5rem;
+    padding: 2rem 0;
 }
 
 .fixed-mobile-nav {
@@ -87,13 +87,23 @@ input[type=text] {
 }
 
 .dropdown-item {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    top: 5rem;
+    right: 0;
     position: absolute;
     background-color: var(--base-color);
-    right: 0;
+    border-radius: 0 0 1rem 1rem;
     padding: 2rem .5rem 1rem .4rem;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+}
+
+.dropdown:hover .dropdown-item {
+    visibility: visible;
+    opacity: 1;
+    top: 1.8rem;
+    transition: all 0.7s;
 }
 
 .dropdown-item a {
@@ -112,36 +122,26 @@ input[type=text] {
     color: var(--bg);
 }
 
-.dropdown-item-mega-shop {
-    display: none;
+.dropdown-item-mega-shop,
+.dropdown-item-mega-product {
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     background-color: var(--bg);
-    max-width: 141rem;
     width: 100%;
     height: auto;
+    top: 10rem;
     left: 50%;
     transform: translateX(-50%);
-    padding: 0 3rem;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     margin-bottom: 2rem;
     border-radius: 1rem;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
-.dropdown-item-mega-product {
-    display: none;
-    position: absolute;
-    background-color: var(--bg);
-    width: 100%;
-    height: auto;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+.dropdown-item-mega-shop {
+    max-width: 141rem;
 }
 
 .sticker {
@@ -165,6 +165,12 @@ input[type=text] {
     padding: 0 2rem;
 }
 
+.mega-menu-shop,
+.mega-product {
+    box-shadow: 0 0 3px #00000026;
+    padding: 0 3rem;
+}
+
 .dropdown-item-mega-product .mega-menu-shop-item {
     display: flex;
     width: calc(100%/6);
@@ -184,7 +190,7 @@ input[type=text] {
 }
 
 .mega-menu-shop-item ul li {
-    padding: 0.8rem 0;
+    padding: 0.8rem 0 !important;
 }
 
 .mega-menu-shop-item ul li a {
@@ -221,14 +227,17 @@ input[type=text] {
 
 .dropdown:hover .dropdown-item,
 .dropdown:hover .dropdown-item-footer,
-.dropdown:hover .dropdown-item-mega-shop,
 .dropdown:hover .dropdown-item-small-page,
 .dropdown:hover .dropdown-item-small-blog {
     display: block;
 }
 
+.dropdown:hover .dropdown-item-mega-shop,
 .dropdown:hover .dropdown-item-mega-product {
-    display: flex;
+    transition: all 0.7s;
+    top: 4.5rem;
+    opacity: 1;
+    visibility: visible;
 }
 
 .nav-left {
@@ -296,7 +305,7 @@ input[type=text] {
     display: block;
     height: 100%;
     line-height: 1.5;
-    padding: 1.2rem 0;
+    padding: 1.2rem 0 !important;
     margin-left: 3rem;
     margin-right: 3rem;
     box-sizing: border-box;
@@ -370,7 +379,7 @@ input[type=text] {
     text-align: left;
     height: 100%;
     line-height: 1.5;
-    padding: 1.2rem 0;
+    padding: 1.2rem 0 !important;
     margin-left: 3rem;
     margin-right: 3rem;
     box-sizing: border-box;
@@ -403,9 +412,9 @@ header {
     margin-top: 9.1rem;
 }
 
-.mobile-navbar ul {
+/* .mobile-navbar ul {
     column-gap: 1rem;
-}
+} */
 
 @media only screen and (min-width: 425px) {
     .icon-nav {
@@ -417,17 +426,28 @@ header {
     .container-header {
         margin-left: auto;
         margin-right: auto;
-        padding: 1rem 3rem;
+        padding: 1rem 0;
     }
 
     .carousel-container {
         margin-top: 9.9rem;
     }
 
-    .mobile-navbar ul {
-        column-gap: 2rem;
+    .mobile-navbar>div a {
+        padding: 0 1.5rem;
     }
 
+}
+
+.signUp span,
+.phoneMail span,
+.language>*,
+.nav-left img {
+    padding: 0 1.5rem;
+}
+
+.mobile-navbar>div a {
+    padding: 0 1.5rem 0 0.5rem;
 }
 
 .language {
@@ -448,7 +468,7 @@ header {
     }
 
     .carousel-container {
-        margin-top: 10.6rem;
+        margin-top: 10.2rem;
     }
 }
 
@@ -466,6 +486,15 @@ header {
 .mobile-navbar>img {
     margin-left: 7rem;
 }
+
+.menu ul li {
+    padding: 0 1.5rem 0 0.5rem;
+}
+
+/* 
+.menu ul:last-child li {
+    padding: 0 1rem;
+} */
 
 .menu {
     display: none;
@@ -501,6 +530,15 @@ header {
     .menu ul li {
         font-size: 1.4rem;
     }
+
+    .dropdown>a::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        left: 0;
+        height: 3rem;
+        z-index: 1;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -511,13 +549,17 @@ header {
     .container-header {
         margin-left: auto;
         margin-right: auto;
-        padding: 0.6rem 3rem;
+        padding: 0.6rem 1.5rem;
     }
 
     .container-header-tail {
         margin-left: auto;
         margin-right: auto;
-        padding: 2rem 3rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .carousel-container {
+        margin-top: 9.6rem;
     }
 }
 
