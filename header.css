@@ -60,7 +60,7 @@
 
 .header- {
     color: var(--bodySecond);
-    background-color: var(--brownie);
+    background-color: var(--base-color);
 }
 
 .header-tail {
