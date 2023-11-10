@@ -49,6 +49,20 @@ function openSubNavBlog() {
     className[0].style.transform = "translateX(0)";
 }
 
+function openSearch() {
+    document.getElementById("search-tab").style.transform = "translateY(0)";
+    document.getElementById("search-tab").style.visibility = "visible";
+    document.getElementById("search-tab-screen").style.transform = "translateY(0)";
+    document.getElementById("search-tab-screen").style.visibility = "visible";
+}
+
+function closeSearch() {
+    document.getElementById("search-tab").style.transform = "translateY(-100%)";
+    document.getElementById("search-tab").style.visibility = "hidden";
+    document.getElementById("search-tab-screen").style.transform = "translateY(-100%)";
+    document.getElementById("search-tab-screen").style.visibility = "hidden";
+}
+
 function goBack() {
     document.getElementById("sub-nav-shop").style.transform = "translateX(-100%)";
     document.getElementById("sub-shop").style.transform = "translateX(-100%)";
@@ -64,12 +78,21 @@ function setGray() {
     document.getElementById("overLay").style.zIndex = "99";
 }
 
+function setGraySearch() {
+    document.getElementById("overLay-screen").style.zIndex = "99";
+}
+
 function on() {
     document.getElementById("overLay").style.display = "block";
 }
 
+function onSearch() {
+    document.getElementById("overLay-screen").style.display = "block";
+}
+
 function off() {
     document.getElementById("overLay").style.display = "none";
+    document.getElementById("overLay-screen").style.display = "none";
 }
 
 function disableScroll() {

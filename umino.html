@@ -233,7 +233,7 @@
                     </div>
 
                     <ul
-                        class="d-flex-row align-item-center surround-0">
+                        class="nav-center d-flex-row align-item-center surround-0">
                         <li>
                             <div class=" d-inline-block">
                                 <a class="nav-link d-inline-block none-decoration base-color font-weight-500 margin-0-auto"
@@ -349,15 +349,16 @@
                                                 <a href="#/"
                                                     class="relative">
                                                     <div
+                                                        class="d-flex btn-second absolute absolute-side justify-content-center align-item-center">
+                                                        Tops
+                                                    </div>
+                                                    <div
                                                         class=" d-block">
-                                                        <img class="d-block"
+                                                        <img class="menu-image d-block"
                                                             src="./media/top-trending-1.svg"
                                                             alt="Model leans over"
                                                             style="width: 100%; height: 100%;">
-
                                                     </div>
-                                                    <button
-                                                        class="btn-second absolute absolute-side">Tops</button>
                                                 </a>
 
                                             </div>
@@ -371,14 +372,16 @@
                                                 <a href="#/"
                                                     class="relative">
                                                     <div
+                                                        class="d-flex btn-second absolute absolute-side justify-content-center align-item-center">
+                                                        Tops
+                                                    </div>
+                                                    <div
                                                         class="d-block">
-                                                        <img class="d-block"
+                                                        <img class="menu-image d-block"
                                                             src="./media/must-have-1.svg"
                                                             alt="Model leans over"
                                                             style="width: 100%; height: 100%;">
                                                     </div>
-                                                    <button
-                                                        class="btn-second absolute absolute-side">Tops</button>
                                                 </a>
                                             </div>
                                         </div>
@@ -804,20 +807,543 @@
                         class="d-flex-row align-item-center nav-right">
                         <li
                             class="d-flex-row justify-content-center align-item-center col-gap-10">
-                            <label for="search-check"
-                                class="pointer">
+                            <a href="javascript:void(0)"
+                                onclick="openSearch();disableScroll();setGraySearch();onSearch()">
                                 <img src="./media/Search.svg"
                                     alt="Search item"
-                                    class="d-block">
-                            </label>
-                            <input type="checkbox"
-                                id="search-check"
-                                style="display: none;">
-                            <input type="text"
-                                placeholder="Search here ...">
+                                    class="icon-func d-block">
+                            </a>
+
+                            <div id="search-tab"
+                                class="search-tab">
+                                <div
+                                    class="container-search d-flex-column">
+                                    <a href="javascript:void(0)"
+                                        onclick="closeSearch(); enableScroll(); off()"
+                                        class="icon-func d-flex justify-content-end">
+                                        <i class="fa-solid fa-xmark"
+                                            style="color: var(--base-color); transform: translateX(-100%); font-size: 2rem;"></i>
+                                    </a>
+
+                                    <div class="d-flex-column justify-content-center align-item-center search-bar"
+                                        style="padding: 0 1.5rem;">
+                                        <h4
+                                            class="search-our-site">
+                                            Search Our
+                                            Site</h4>
+                                        <input type="search"
+                                            class="input-search"
+                                            placeholder="I'm looking for..."
+                                            autocomplete="off">
+                                        <span>Quick
+                                            Search:&nbsp;
+                                            <a
+                                                href="">Shirt</a>,
+                                            <a
+                                                href="">Dress</a>,
+                                            <a
+                                                href="">Sweater</a>,
+                                            ...
+                                        </span>
+                                    </div>
+
+                                    <div class="d-flex-column catalog-search"
+                                        style="flex-wrap: nowrap; overflow-y: scroll;">
+                                        <div
+                                            class="popular-product">
+                                            <p>Popular
+                                                Products
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="d-flex-row">
+                                            <div
+                                                class="d-flex-column image-search row-gap-16">
+                                                <a
+                                                    href="#trending">
+                                                    <div
+                                                        class="trending-product-container relative hidden">
+                                                        <div
+                                                            class="trending-product-image d-block">
+                                                            <img class=" d-block"
+                                                                src="./media/top-trending-1.svg"
+                                                                alt="top-trending-1"
+                                                                style="width: 100%;">
+                                                        </div>
+
+                                                        <div
+                                                            class="extra-info absolute d-flex-column row-gap-3">
+                                                            <p
+                                                                class="corner-info-search discount">
+                                                                -10%
+                                                            </p>
+                                                            <p
+                                                                class="corner-info-search pre-order">
+                                                                Pre-Order
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+
+                                                <div
+                                                    class="product-discription d-flex-column align-item-start row-gap-8">
+                                                    <span>Square
+                                                        Textured
+                                                        Striped</span>
+                                                    <img src="./media/rate.svg"
+                                                        alt="Rating">
+                                                    <span
+                                                        class="font-weight-500">$150.00</span>
+                                                    <div
+                                                        class="choose-color">
+                                                        <ul
+                                                            class="d-flex-row gap-5 padding-0 margin-0">
+                                                            <li
+                                                                class="margin-0 d-inline-block">
+                                                                <label
+                                                                    class="pointer">
+                                                                    <input
+                                                                        class="d-none"
+                                                                        type="radio"
+                                                                        name="color"
+                                                                        value="green">
+                                                                    <span
+                                                                        class="radio-check"
+                                                                        style="background-color: var(--fashiongreen);"></span>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>
+                                                                    <input
+                                                                        class="d-none"
+                                                                        type="radio"
+                                                                        name="color"
+                                                                        value="brown">
+                                                                    <span
+                                                                        class="radio-check"
+                                                                        style="background-color: var(--fashionbrown);"></span>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>
+                                                                    <input
+                                                                        class="d-none"
+                                                                        type="radio"
+                                                                        name="color"
+                                                                        value="tan">
+                                                                    <span
+                                                                        class="radio-check"
+                                                                        style="background-color: var(--fashiontan);"></span>
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div
+                                                class="d-flex-column image-search row-gap-16">
+                                                <a
+                                                    href="trending">
+                                                    <div
+                                                        class="trending-product-container relative hidden">
+                                                        <div
+                                                            class="trending-product-image d-block">
+                                                            <img class=" d-block"
+                                                                src="./media/top-trending-2.svg"
+                                                                alt="top-trending-2"
+                                                                style="width: 100%;">
+                                                        </div>
+
+                                                    </div>
+                                                </a>
+
+                                                <div
+                                                    class="product-discription d-flex-column align-item-start row-gap-8">
+                                                    <span>Square
+                                                        Textured
+                                                        Striped</span>
+                                                    <img src="./media/rate.svg"
+                                                        alt="Rating">
+                                                    <span
+                                                        class="color-key-fashion font-weight-500">$150.00
+                                                        <span
+                                                            class="color-body-second"><s>$490.00</s>
+                                                        </span>
+                                                    </span>
+                                                    <div
+                                                        class="choose-color">
+                                                        <ul
+                                                            class="d-flex-row gap-5 padding-0 margin-0">
+                                                            <li
+                                                                class="margin-0 d-inline-block">
+                                                                <label
+                                                                    class="pointer">
+                                                                    <input
+                                                                        class="d-none"
+                                                                        type="radio"
+                                                                        name="color"
+                                                                        value="green">
+                                                                    <span
+                                                                        class="radio-check"
+                                                                        style="background-color: var(--fashiongreen);"></span>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>
+                                                                    <input
+                                                                        class="d-none"
+                                                                        type="radio"
+                                                                        name="color"
+                                                                        value="brown">
+                                                                    <span
+                                                                        class="radio-check"
+                                                                        style="background-color: var(--fashionbrown);"></span>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>
+                                                                    <input
+                                                                        class="d-none"
+                                                                        type="radio"
+                                                                        name="color"
+                                                                        value="tan">
+                                                                    <span
+                                                                        class="radio-check"
+                                                                        style="background-color: var(--fashiontan);"></span>
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="d-flex-column image-search row-gap-16">
+                                                <a
+                                                    href="#trending">
+                                                    <div
+                                                        class="trending-product-container relative hidden">
+                                                        <div
+                                                            class="trending-product-image d-block">
+                                                            <img class=" d-block"
+                                                                src="./media/top-trending-3.svg"
+                                                                alt="top-trending-3"
+                                                                style="width: 100%;">
+                                                        </div>
+                                                        <div
+                                                            class="extra-info absolute d-flex-column row-gap-3">
+                                                            <p
+                                                                class="corner-info-search discount">
+                                                                -15%
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+                                                </a>
+
+                                                <div
+                                                    class="product-discription d-flex-column align-item-start row-gap-8">
+                                                    <span>Square
+                                                        Textured
+                                                        Striped</span>
+                                                    <img src="./media/rate.svg"
+                                                        alt="Rating">
+                                                    <span
+                                                        class="font-weight-500">$150.00
+                                                    </span>
+                                                    <div
+                                                        class="choose-color">
+                                                        <ul
+                                                            class="d-flex-row gap-5 padding-0 margin-0">
+                                                            <li
+                                                                class="margin-0 d-inline-block">
+                                                                <label
+                                                                    class="pointer">
+                                                                    <input
+                                                                        class="d-none"
+                                                                        type="radio"
+                                                                        name="color"
+                                                                        value="green">
+                                                                    <span
+                                                                        class="radio-check"
+                                                                        style="background-color: var(--fashiongreen);"></span>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>
+                                                                    <input
+                                                                        class="d-none"
+                                                                        type="radio"
+                                                                        name="color"
+                                                                        value="brown">
+                                                                    <span
+                                                                        class="radio-check"
+                                                                        style="background-color: var(--fashionbrown);"></span>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>
+                                                                    <input
+                                                                        class="d-none"
+                                                                        type="radio"
+                                                                        name="color"
+                                                                        value="tan">
+                                                                    <span
+                                                                        class="radio-check"
+                                                                        style="background-color: var(--fashiontan);"></span>
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="d-flex-column image-search row-gap-16">
+                                                <a
+                                                    href="#trendingproduct">
+                                                    <div
+                                                        class="trending-product-container relative hidden">
+                                                        <div
+                                                            class="trending-product-image d-block">
+                                                            <img class="d-block"
+                                                                src="./media/top-trending-4.svg"
+                                                                alt="top-trending-4"
+                                                                style="width: 100%;">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div
+                                                    class="product-discription d-flex-column align-item-start row-gap-8">
+                                                    <span>Square
+                                                        Textured
+                                                        Striped</span>
+                                                    <img src="./media/rate.svg"
+                                                        alt="Rating">
+                                                    <span
+                                                        class="font-weight-500">$150.00
+                                                    </span>
+                                                    <div
+                                                        class="choose-color">
+                                                        <ul
+                                                            class="d-flex-row gap-5 padding-0 margin-0">
+                                                            <li
+                                                                class="margin-0 d-inline-block">
+                                                                <label
+                                                                    class="pointer">
+                                                                    <input
+                                                                        class="d-none"
+                                                                        type="radio"
+                                                                        name="color"
+                                                                        value="green">
+                                                                    <span
+                                                                        class="radio-check"
+                                                                        style="background-color: var(--fashiongreen);"></span>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>
+                                                                    <input
+                                                                        class="d-none"
+                                                                        type="radio"
+                                                                        name="color"
+                                                                        value="brown">
+                                                                    <span
+                                                                        class="radio-check"
+                                                                        style="background-color: var(--fashionbrown);"></span>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>
+                                                                    <input
+                                                                        class="d-none"
+                                                                        type="radio"
+                                                                        name="color"
+                                                                        value="tan">
+                                                                    <span
+                                                                        class="radio-check"
+                                                                        style="background-color: var(--fashiontan);"></span>
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="d-flex-column image-search row-gap-16">
+                                                <a
+                                                    href="#trending">
+                                                    <div
+                                                        class="trending-product-container relative hidden">
+                                                        <div
+                                                            class="trending-product-image d-block">
+                                                            <img class=" d-block"
+                                                                src="./media/top-trending-1.svg"
+                                                                alt="top-trending-1"
+                                                                style="width: 100%;">
+                                                        </div>
+
+                                                        <div
+                                                            class="extra-info absolute d-flex-column row-gap-3">
+                                                            <p
+                                                                class="corner-info-search discount">
+                                                                -10%
+                                                            </p>
+                                                            <p
+                                                                class="corner-info-search pre-order">
+                                                                Pre-Order
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+
+                                                <div
+                                                    class="product-discription d-flex-column align-item-start row-gap-8">
+                                                    <span>Square
+                                                        Textured
+                                                        Striped</span>
+                                                    <img src="./media/rate.svg"
+                                                        alt="Rating">
+                                                    <span
+                                                        class="font-weight-500">$150.00</span>
+                                                    <div
+                                                        class="choose-color">
+                                                        <ul
+                                                            class="d-flex-row gap-5 padding-0 margin-0">
+                                                            <li
+                                                                class="margin-0 d-inline-block">
+                                                                <label
+                                                                    class="pointer">
+                                                                    <input
+                                                                        class="d-none"
+                                                                        type="radio"
+                                                                        name="color"
+                                                                        value="green">
+                                                                    <span
+                                                                        class="radio-check"
+                                                                        style="background-color: var(--fashiongreen);"></span>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>
+                                                                    <input
+                                                                        class="d-none"
+                                                                        type="radio"
+                                                                        name="color"
+                                                                        value="brown">
+                                                                    <span
+                                                                        class="radio-check"
+                                                                        style="background-color: var(--fashionbrown);"></span>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>
+                                                                    <input
+                                                                        class="d-none"
+                                                                        type="radio"
+                                                                        name="color"
+                                                                        value="tan">
+                                                                    <span
+                                                                        class="radio-check"
+                                                                        style="background-color: var(--fashiontan);"></span>
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div
+                                                class="d-flex-column image-search row-gap-16">
+                                                <a
+                                                    href="trending">
+                                                    <div
+                                                        class="trending-product-container relative hidden">
+                                                        <div
+                                                            class="trending-product-image d-block">
+                                                            <img class=" d-block"
+                                                                src="./media/top-trending-2.svg"
+                                                                alt="top-trending-2"
+                                                                style="width: 100%;">
+                                                        </div>
+
+                                                    </div>
+                                                </a>
+
+                                                <div
+                                                    class="product-discription d-flex-column align-item-start row-gap-8">
+                                                    <span>Square
+                                                        Textured
+                                                        Striped</span>
+                                                    <img src="./media/rate.svg"
+                                                        alt="Rating">
+                                                    <span
+                                                        class="color-key-fashion font-weight-500">$150.00
+                                                        <span
+                                                            class="color-body-second"><s>$490.00</s>
+                                                        </span>
+                                                    </span>
+                                                    <div
+                                                        class="choose-color">
+                                                        <ul
+                                                            class="d-flex-row gap-5 padding-0 margin-0">
+                                                            <li
+                                                                class="margin-0 d-inline-block">
+                                                                <label
+                                                                    class="pointer">
+                                                                    <input
+                                                                        class="d-none"
+                                                                        type="radio"
+                                                                        name="color"
+                                                                        value="green">
+                                                                    <span
+                                                                        class="radio-check"
+                                                                        style="background-color: var(--fashiongreen);"></span>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>
+                                                                    <input
+                                                                        class="d-none"
+                                                                        type="radio"
+                                                                        name="color"
+                                                                        value="brown">
+                                                                    <span
+                                                                        class="radio-check"
+                                                                        style="background-color: var(--fashionbrown);"></span>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>
+                                                                    <input
+                                                                        class="d-none"
+                                                                        type="radio"
+                                                                        name="color"
+                                                                        value="tan">
+                                                                    <span
+                                                                        class="radio-check"
+                                                                        style="background-color: var(--fashiontan);"></span>
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            <a class="d-block" href="">
+                            <a class="icon-func d-block"
+                                href="">
                                 <img src="./media/Login.svg"
                                     alt="Sign in"
                                     class="d-block">
@@ -825,7 +1351,8 @@
                         </li>
 
                         <li>
-                            <a class="d-block" href="">
+                            <a class="icon-func d-block"
+                                href="">
                                 <img src="./media/Recently_viewed.svg"
                                     alt="Recently viewed"
                                     class="d-block">
@@ -833,7 +1360,8 @@
                         </li>
 
                         <li>
-                            <a class="d-block" href="">
+                            <a class="icon-func d-block"
+                                href="">
                                 <img src="./media/wishlist.svg"
                                     alt="Wishlist"
                                     class="d-block">
@@ -841,7 +1369,8 @@
                         </li>
 
                         <li>
-                            <a class="d-block" href="">
+                            <a class="icon-func d-block"
+                                href="">
                                 <img src="./media/cart.svg"
                                     alt="Your cart"
                                     class="d-block">
@@ -851,6 +1380,7 @@
                 </div>
 
                 <div id="overLay"></div>
+                <div id="overLay-screen"></div>
 
                 <div
                     class="mobile-navbar container-header-tail d-flex-row">
@@ -903,91 +1433,99 @@
                                                 style="color: #000000; font-size: 1.2rem;"></i>
                                         </span>
                                     </a>
-                                </li>
 
-                                <div id="sub-nav-shop"
-                                    class="sub-nav-shop d-flex-column">
-                                    <div>
-                                        <div class="relative"
-                                            style="color: var(--bg); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--base-color);">
-                                            <a href="javascript:void(0)"
-                                                style="border: none; padding: 0;"
-                                                onclick="goBack()">
-                                                <i class="fa-solid fa-arrow-left absolute"
-                                                    style="color: #ffffff; left: 2rem; top: 50%; transform: translateY(-50%);"></i>
-                                            </a>
-                                            <span>Shop</span>
-                                            <a href="javascript:void(0)"
-                                                style="border: none; padding: 0;"
-                                                onclick="closeNav(), off()">
-                                                <i class="fa-solid fa-xmark absolute"
-                                                    style="color: #ffffff; right: 2rem; top: 50%; transform: translateY(-50%);"></i>
-                                            </a>
+                                    <div id="sub-nav-shop"
+                                        class="sub-nav-shop d-flex-column">
+                                        <div>
+                                            <div class="relative"
+                                                style="color: var(--bg); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--base-color);">
+                                                <a href="javascript:void(0)"
+                                                    style="border: none; padding: 0;"
+                                                    onclick="goBack()">
+                                                    <i class="fa-solid fa-arrow-left absolute"
+                                                        style="color: #ffffff; left: 2rem; top: 50%; transform: translateY(-50%);"></i>
+                                                </a>
+                                                <span>Shop</span>
+                                                <a href="javascript:void(0)"
+                                                    style="border: none; padding: 0;"
+                                                    onclick="closeNav(), off()">
+                                                    <i class="fa-solid fa-xmark absolute"
+                                                        style="color: #ffffff; right: 2rem; top: 50%; transform: translateY(-50%);"></i>
+                                                </a>
+                                            </div>
                                         </div>
+
+                                        <div class="grow-fit"
+                                            style="width: 30rem; overflow: hidden; position: relative;">
+                                            <ul id="sub-shop"
+                                                class="sub-nav absolute justify-content-start"
+                                                style="padding-top: 1rem; transform: translateX(-30rem); z-index: 200; width: 100%;">
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Default
+                                                        layout</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Full
+                                                        width</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Full
+                                                        container</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Product
+                                                        detail
+                                                        digital</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Default
+                                                        tab</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Tab
+                                                        accordion</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Open
+                                                        all
+                                                        tab</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Tab
+                                                        accordion</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <span
+                                            class="register-shop d-flex-column row-gap-8 justify-content-end"
+                                            style="margin: 2rem 3rem; z-index: 201;">
+                                            <button
+                                                class="btn-login pointer">LOG
+                                                IN</button>
+                                            <button
+                                                class="btn-create-account poiter">CREATE
+                                                ACCOUNT</button>
+                                        </span>
+
                                     </div>
-
-                                    <div class="grow-fit"
-                                        style="width: 30rem; overflow: hidden; position: relative;">
-                                        <ul id="sub-shop"
-                                            class="sub-nav absolute justify-content-start"
-                                            style="padding-top: 1rem; transform: translateX(-30rem); z-index: 200; width: 100%;">
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Default
-                                                    layout</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Full
-                                                    width</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Full
-                                                    container</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Product
-                                                    detail
-                                                    digital</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Default
-                                                    tab</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Tab
-                                                    accordion</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Open
-                                                    all
-                                                    tab</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Tab
-                                                    accordion</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <span
-                                        class="register-shop d-flex-column row-gap-8 justify-content-end"
-                                        style="margin: 2rem 3rem; z-index: 201;">
-                                        <button
-                                            class="btn-login pointer">LOG
-                                            IN</button>
-                                        <button
-                                            class="btn-create-account poiter">CREATE
-                                            ACCOUNT</button>
-                                    </span>
-
-                                </div>
+                                </li>
 
                                 <li class="nav-item">
                                     <a href="#"
@@ -1000,79 +1538,85 @@
                                                 style="color: #000000; font-size: 1.2rem;"></i>
                                         </span>
                                     </a>
-                                </li>
 
-                                <div id="sub-nav-product"
-                                    class="sub-nav-shop d-flex-column">
-                                    <div>
-                                        <div class="relative"
-                                            style="color: var(--bg); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--base-color);">
-                                            <a href="javascript:void(0)"
-                                                style="border: none; padding: 0;"
-                                                onclick="goBack()">
-                                                <i class="fa-solid fa-arrow-left absolute"
-                                                    style="color: #ffffff; left: 2rem; top: 50%; transform: translateY(-50%);"></i>
-                                            </a>
-                                            <span>Product</span>
-                                            <a href="javascript:void(0)"
-                                                style="border: none; padding: 0;"
-                                                onclick="closeNav(), off()">
-                                                <i class="fa-solid fa-xmark absolute"
-                                                    style="color: #ffffff; right: 2rem; top: 50%; transform: translateY(-50%);"></i>
-                                            </a>
+                                    <div id="sub-nav-product"
+                                        class="sub-nav-shop d-flex-column">
+                                        <div>
+                                            <div class="relative"
+                                                style="color: var(--bg); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--base-color);">
+                                                <a href="javascript:void(0)"
+                                                    style="border: none; padding: 0;"
+                                                    onclick="goBack()">
+                                                    <i class="fa-solid fa-arrow-left absolute"
+                                                        style="color: #ffffff; left: 2rem; top: 50%; transform: translateY(-50%);"></i>
+                                                </a>
+                                                <span>Product</span>
+                                                <a href="javascript:void(0)"
+                                                    style="border: none; padding: 0;"
+                                                    onclick="closeNav(), off()">
+                                                    <i class="fa-solid fa-xmark absolute"
+                                                        style="color: #ffffff; right: 2rem; top: 50%; transform: translateY(-50%);"></i>
+                                                </a>
+                                            </div>
                                         </div>
+
+                                        <div class="grow-fit"
+                                            style="width: 30rem; overflow: hidden; position: relative;">
+                                            <ul id="sub-product"
+                                                class="sub-nav absolute justify-content-start"
+                                                style="padding-top: 1rem; transform: translateX(-30rem); z-index: 200; width: 100%;">
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Product
+                                                        Layout</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Product
+                                                        Features</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Product
+                                                        Details</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Thumbnails
+                                                        Position</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Boot
+                                                        Sale</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Product
+                                                        Types</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <span
+                                            class="register-product d-flex-column row-gap-8 justify-content-end"
+                                            style="margin: 2rem 3rem; z-index: 201;">
+                                            <button
+                                                class="btn-login pointer">LOG
+                                                IN</button>
+                                            <button
+                                                class="btn-create-account pointer">CREATE
+                                                ACCOUNT</button>
+                                        </span>
+
                                     </div>
-
-                                    <div class="grow-fit"
-                                        style="width: 30rem; overflow: hidden; position: relative;">
-                                        <ul id="sub-product"
-                                            class="sub-nav absolute justify-content-start"
-                                            style="padding-top: 1rem; transform: translateX(-30rem); z-index: 200; width: 100%;">
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Product
-                                                    Layout</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Product
-                                                    Features</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Product
-                                                    Details</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Thumbnails
-                                                    Position</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Boot
-                                                    Sale</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Product
-                                                    Types</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <span
-                                        class="register-product d-flex-column row-gap-8 justify-content-end"
-                                        style="margin: 2rem 3rem; z-index: 201;">
-                                        <button
-                                            class="btn-login pointer">LOG
-                                            IN</button>
-                                        <button
-                                            class="btn-create-account pointer">CREATE
-                                            ACCOUNT</button>
-                                    </span>
-
-                                </div>
+                                </li>
 
                                 <li class="nav-item">
                                     <a href="#"
@@ -1085,116 +1629,121 @@
                                                 style="color: #000000; font-size: 1.2rem;"></i>
                                         </span>
                                     </a>
-
-                                </li>
-
-                                <div id="sub-nav-page"
-                                    class="sub-nav-shop d-flex-column">
-                                    <div>
-                                        <div class="relative"
-                                            style="color: var(--bg); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--base-color);">
-                                            <a href="javascript:void(0)"
-                                                style="border: none; padding: 0;"
-                                                onclick="goBack()">
-                                                <i class="fa-solid fa-arrow-left absolute"
-                                                    style="color: #ffffff; left: 2rem; top: 50%; transform: translateY(-50%);"></i>
-                                            </a>
-                                            <span>Page</span>
-                                            <a href="javascript:void(0)"
-                                                style="border: none; padding: 0;"
-                                                onclick="closeNav(), off()">
-                                                <i class="fa-solid fa-xmark absolute"
-                                                    style="color: #ffffff; right: 2rem; top: 50%; transform: translateY(-50%);"></i>
-                                            </a>
+                                    <div id="sub-nav-page"
+                                        class="sub-nav-shop d-flex-column">
+                                        <div>
+                                            <div class="relative"
+                                                style="color: var(--bg); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--base-color);">
+                                                <a href="javascript:void(0)"
+                                                    style="border: none; padding: 0;"
+                                                    onclick="goBack()">
+                                                    <i class="fa-solid fa-arrow-left absolute"
+                                                        style="color: #ffffff; left: 2rem; top: 50%; transform: translateY(-50%);"></i>
+                                                </a>
+                                                <span>Page</span>
+                                                <a href="javascript:void(0)"
+                                                    style="border: none; padding: 0;"
+                                                    onclick="closeNav(), off()">
+                                                    <i class="fa-solid fa-xmark absolute"
+                                                        style="color: #ffffff; right: 2rem; top: 50%; transform: translateY(-50%);"></i>
+                                                </a>
+                                            </div>
                                         </div>
+
+                                        <div class="grow-fit"
+                                            style="width: 30rem; overflow: hidden; position: relative;">
+                                            <ul id="sub-page"
+                                                class="sub-nav absolute justify-content-start"
+                                                style="padding-top: 1rem; transform: translateX(-30rem); z-index: 200; width: 100%;">
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">About
+                                                        Us</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Our
+                                                        Stores</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">FAQ's</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Brands</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Career</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Contact
+                                                        Us</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Store
+                                                        location</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Timeline</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Porfolio</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Compare</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">My
+                                                        Account</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Page
+                                                        404</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Recently
+                                                        Viewed
+                                                        Products</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <span
+                                            class="register-page d-flex-column row-gap-8 justify-content-end"
+                                            style="margin: 2rem 3rem; z-index: 201;">
+                                            <button
+                                                class="btn-login pointer">LOG
+                                                IN</button>
+                                            <button
+                                                class="btn-create-account pointer">CREATE
+                                                ACCOUNT</button>
+                                        </span>
+
                                     </div>
-
-                                    <div class="grow-fit"
-                                        style="width: 30rem; overflow: hidden; position: relative;">
-                                        <ul id="sub-page"
-                                            class="sub-nav absolute justify-content-start"
-                                            style="padding-top: 1rem; transform: translateX(-30rem); z-index: 200; width: 100%;">
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">About
-                                                    Us</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Our
-                                                    Stores</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a
-                                                    href="">FAQ's</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a
-                                                    href="">Brands</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a
-                                                    href="">Career</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Contact
-                                                    Us</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Store
-                                                    location</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a
-                                                    href="">Timeline</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a
-                                                    href="">Porfolio</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a
-                                                    href="">Compare</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">My
-                                                    Account</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Page
-                                                    404</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Recently
-                                                    Viewed
-                                                    Products</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <span
-                                        class="register-page d-flex-column row-gap-8 justify-content-end"
-                                        style="margin: 2rem 3rem; z-index: 201;">
-                                        <button
-                                            class="btn-login pointer">LOG
-                                            IN</button>
-                                        <button
-                                            class="btn-create-account pointer">CREATE
-                                            ACCOUNT</button>
-                                    </span>
-
-                                </div>
+                                </li>
 
                                 <li class="nav-item">
                                     <a href="#"
@@ -1207,101 +1756,110 @@
                                                 style="color: #000000; font-size: 1.2rem;"></i>
                                         </span>
                                     </a>
-                                </li>
 
-                                <div id="sub-nav-blog"
-                                    class="sub-nav-shop d-flex-column">
-                                    <div>
-                                        <div class="relative"
-                                            style="color: var(--bg); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--base-color);">
-                                            <a href="javascript:void(0)"
-                                                style="border: none; padding: 0;"
-                                                onclick="goBack()">
-                                                <i class="fa-solid fa-arrow-left absolute"
-                                                    style="color: #ffffff; left: 2rem; top: 50%; transform: translateY(-50%);"></i>
-                                            </a>
-                                            <span>Blog</span>
-                                            <a href="javascript:void(0)"
-                                                style="border: none; padding: 0;"
-                                                onclick="closeNav(), off()">
-                                                <i class="fa-solid fa-xmark absolute"
-                                                    style="color: #ffffff; right: 2rem; top: 50%; transform: translateY(-50%);"></i>
-                                            </a>
+                                    <div id="sub-nav-blog"
+                                        class="sub-nav-shop d-flex-column">
+                                        <div>
+                                            <div class="relative"
+                                                style="color: var(--bg); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--base-color);">
+                                                <a href="javascript:void(0)"
+                                                    style="border: none; padding: 0;"
+                                                    onclick="goBack()">
+                                                    <i class="fa-solid fa-arrow-left absolute"
+                                                        style="color: #ffffff; left: 2rem; top: 50%; transform: translateY(-50%);"></i>
+                                                </a>
+                                                <span>Blog</span>
+                                                <a href="javascript:void(0)"
+                                                    style="border: none; padding: 0;"
+                                                    onclick="closeNav(), off()">
+                                                    <i class="fa-solid fa-xmark absolute"
+                                                        style="color: #ffffff; right: 2rem; top: 50%; transform: translateY(-50%);"></i>
+                                                </a>
+                                            </div>
                                         </div>
+
+                                        <div class="grow-fit"
+                                            style="width: 30rem; overflow: hidden; position: relative;">
+                                            <ul id="sub-blog"
+                                                class="sub-nav absolute justify-content-start"
+                                                style="padding-top: 1rem; transform: translateX(-30rem); z-index: 200; width: 100%;">
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Grid
+                                                        2
+                                                        columns</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Grid
+                                                        3
+                                                        columns</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Grid
+                                                        4
+                                                        columns</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Post
+                                                        left
+                                                        sidebar</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Post
+                                                        right
+                                                        sidebar</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Post
+                                                        list
+                                                        view</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Single
+                                                        post</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Pagination
+                                                        loadmore</a>
+                                                </li>
+                                                <li
+                                                    class="sub-nav-item">
+                                                    <a
+                                                        href="">Pagination
+                                                        Infinite
+                                                        scrolling</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <span
+                                            class="register-blog d-flex-column row-gap-8 justify-content-end"
+                                            style="margin: 2rem 3rem; z-index: 201;">
+                                            <button
+                                                class="btn-login pointer">LOG
+                                                IN</button>
+                                            <button
+                                                class="btn-create-account pointer">CREATE
+                                                ACCOUNT</button>
+                                        </span>
+
                                     </div>
-
-                                    <div class="grow-fit"
-                                        style="width: 30rem; overflow: hidden; position: relative;">
-                                        <ul id="sub-blog"
-                                            class="sub-nav absolute justify-content-start"
-                                            style="padding-top: 1rem; transform: translateX(-30rem); z-index: 200; width: 100%;">
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Grid
-                                                    2
-                                                    columns</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Grid
-                                                    3
-                                                    columns</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Grid
-                                                    4
-                                                    columns</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Post
-                                                    left
-                                                    sidebar</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Post
-                                                    right
-                                                    sidebar</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Post
-                                                    list
-                                                    view</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Single
-                                                    post</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Pagination
-                                                    loadmore</a>
-                                            </li>
-                                            <li
-                                                class="sub-nav-item">
-                                                <a href="">Pagination
-                                                    Infinite
-                                                    scrolling</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <span
-                                        class="register-blog d-flex-column row-gap-8 justify-content-end"
-                                        style="margin: 2rem 3rem; z-index: 201;">
-                                        <button
-                                            class="btn-login pointer">LOG
-                                            IN</button>
-                                        <button
-                                            class="btn-create-account pointer">CREATE
-                                            ACCOUNT</button>
-                                    </span>
-
-                                </div>
+                                </li>
 
                                 <li class="nav-item">
                                     <a class="none-decoration base-color"
@@ -1346,15 +1904,547 @@
                         class="flex-30 justify-content-end">
                         <ul
                             class="d-flex-row align-item-center">
-                            <li>
-                                <a class="d-block" href="">
+                            <li
+                                class="d-flex-row justify-content-center align-item-center col-gap-10">
+                                <a href="javascript:void(0)"
+                                    class="icon-func"
+                                    onclick="openSearch();disableScroll();setGraySearch();onSearch()">
                                     <img src="./media/Search.svg"
                                         alt="Search item"
                                         class="d-block">
                                 </a>
+
+                                <div id="search-tab-screen"
+                                    class="search-tab">
+                                    <div
+                                        class="container-search d-flex-column">
+                                        <a href="javascript:void(0)"
+                                            onclick="closeSearch(); enableScroll(); off()"
+                                            class="d-flex justify-content-end">
+                                            <i class="fa-solid fa-xmark"
+                                                style="color: var(--base-color); transform: translateX(-100%); font-size: 2rem;"></i>
+                                        </a>
+
+                                        <div class="d-flex-column justify-content-center align-item-center search-bar"
+                                            style="padding: 0 1.5rem;">
+                                            <h4
+                                                class="search-our-site">
+                                                Search Our
+                                                Site</h4>
+                                            <input
+                                                type="search"
+                                                class="input-search"
+                                                placeholder="I'm looking for..."
+                                                autocomplete="off">
+                                            <span>Quick
+                                                Search:&nbsp;
+                                                <a
+                                                    href="">Shirt</a>,
+                                                <a
+                                                    href="">Dress</a>,
+                                                <a
+                                                    href="">Sweater</a>,
+                                                ...
+                                            </span>
+                                        </div>
+
+                                        <div class="d-flex-column"
+                                            style="flex-wrap: nowrap; overflow-y: scroll;">
+                                            <div
+                                                class="popular-product">
+                                                <p>Popular
+                                                    Products
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="d-flex-row">
+                                                <div
+                                                    class="d-flex-column image-search row-gap-16">
+                                                    <a
+                                                        href="#trending">
+                                                        <div
+                                                            class="trending-product-container relative hidden">
+                                                            <div
+                                                                class="trending-product-image d-block">
+                                                                <img class=" d-block"
+                                                                    src="./media/top-trending-1.svg"
+                                                                    alt="top-trending-1"
+                                                                    style="width: 100%;">
+                                                            </div>
+
+                                                            <div
+                                                                class="extra-info absolute d-flex-column row-gap-3">
+                                                                <p
+                                                                    class="corner-info-search discount">
+                                                                    -10%
+                                                                </p>
+                                                                <p
+                                                                    class="corner-info-search pre-order">
+                                                                    Pre-Order
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+
+
+                                                    <div
+                                                        class="product-discription d-flex-column align-item-start row-gap-8">
+                                                        <span>Square
+                                                            Textured
+                                                            Striped</span>
+                                                        <img src="./media/rate.svg"
+                                                            alt="Rating">
+                                                        <span
+                                                            class="font-weight-500">$150.00</span>
+                                                        <div
+                                                            class="choose-color">
+                                                            <ul
+                                                                class="d-flex-row gap-5 padding-0 margin-0">
+                                                                <li
+                                                                    class="margin-0 d-inline-block">
+                                                                    <label
+                                                                        class="pointer">
+                                                                        <input
+                                                                            class="d-none"
+                                                                            type="radio"
+                                                                            name="color"
+                                                                            value="green">
+                                                                        <span
+                                                                            class="radio-check"
+                                                                            style="background-color: var(--fashiongreen);"></span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label>
+                                                                        <input
+                                                                            class="d-none"
+                                                                            type="radio"
+                                                                            name="color"
+                                                                            value="brown">
+                                                                        <span
+                                                                            class="radio-check"
+                                                                            style="background-color: var(--fashionbrown);"></span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label>
+                                                                        <input
+                                                                            class="d-none"
+                                                                            type="radio"
+                                                                            name="color"
+                                                                            value="tan">
+                                                                        <span
+                                                                            class="radio-check"
+                                                                            style="background-color: var(--fashiontan);"></span>
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div
+                                                    class="d-flex-column image-search row-gap-16">
+                                                    <a
+                                                        href="trending">
+                                                        <div
+                                                            class="trending-product-container relative hidden">
+                                                            <div
+                                                                class="trending-product-image d-block">
+                                                                <img class=" d-block"
+                                                                    src="./media/top-trending-2.svg"
+                                                                    alt="top-trending-2"
+                                                                    style="width: 100%;">
+                                                            </div>
+
+                                                        </div>
+                                                    </a>
+
+                                                    <div
+                                                        class="product-discription d-flex-column align-item-start row-gap-8">
+                                                        <span>Square
+                                                            Textured
+                                                            Striped</span>
+                                                        <img src="./media/rate.svg"
+                                                            alt="Rating">
+                                                        <span
+                                                            class="color-key-fashion font-weight-500">$150.00
+                                                            <span
+                                                                class="color-body-second"><s>$490.00</s>
+                                                            </span>
+                                                        </span>
+                                                        <div
+                                                            class="choose-color">
+                                                            <ul
+                                                                class="d-flex-row gap-5 padding-0 margin-0">
+                                                                <li
+                                                                    class="margin-0 d-inline-block">
+                                                                    <label
+                                                                        class="pointer">
+                                                                        <input
+                                                                            class="d-none"
+                                                                            type="radio"
+                                                                            name="color"
+                                                                            value="green">
+                                                                        <span
+                                                                            class="radio-check"
+                                                                            style="background-color: var(--fashiongreen);"></span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label>
+                                                                        <input
+                                                                            class="d-none"
+                                                                            type="radio"
+                                                                            name="color"
+                                                                            value="brown">
+                                                                        <span
+                                                                            class="radio-check"
+                                                                            style="background-color: var(--fashionbrown);"></span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label>
+                                                                        <input
+                                                                            class="d-none"
+                                                                            type="radio"
+                                                                            name="color"
+                                                                            value="tan">
+                                                                        <span
+                                                                            class="radio-check"
+                                                                            style="background-color: var(--fashiontan);"></span>
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="d-flex-column image-search row-gap-16">
+                                                    <a
+                                                        href="#trending">
+                                                        <div
+                                                            class="trending-product-container relative hidden">
+                                                            <div
+                                                                class="trending-product-image d-block">
+                                                                <img class=" d-block"
+                                                                    src="./media/top-trending-3.svg"
+                                                                    alt="top-trending-3"
+                                                                    style="width: 100%;">
+                                                            </div>
+                                                            <div
+                                                                class="extra-info absolute d-flex-column row-gap-3">
+                                                                <p
+                                                                    class="corner-info-search discount">
+                                                                    -15%
+                                                                </p>
+                                                            </div>
+
+                                                        </div>
+                                                    </a>
+
+                                                    <div
+                                                        class="product-discription d-flex-column align-item-start row-gap-8">
+                                                        <span>Square
+                                                            Textured
+                                                            Striped</span>
+                                                        <img src="./media/rate.svg"
+                                                            alt="Rating">
+                                                        <span
+                                                            class="font-weight-500">$150.00
+                                                        </span>
+                                                        <div
+                                                            class="choose-color">
+                                                            <ul
+                                                                class="d-flex-row gap-5 padding-0 margin-0">
+                                                                <li
+                                                                    class="margin-0 d-inline-block">
+                                                                    <label
+                                                                        class="pointer">
+                                                                        <input
+                                                                            class="d-none"
+                                                                            type="radio"
+                                                                            name="color"
+                                                                            value="green">
+                                                                        <span
+                                                                            class="radio-check"
+                                                                            style="background-color: var(--fashiongreen);"></span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label>
+                                                                        <input
+                                                                            class="d-none"
+                                                                            type="radio"
+                                                                            name="color"
+                                                                            value="brown">
+                                                                        <span
+                                                                            class="radio-check"
+                                                                            style="background-color: var(--fashionbrown);"></span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label>
+                                                                        <input
+                                                                            class="d-none"
+                                                                            type="radio"
+                                                                            name="color"
+                                                                            value="tan">
+                                                                        <span
+                                                                            class="radio-check"
+                                                                            style="background-color: var(--fashiontan);"></span>
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="d-flex-column image-search row-gap-16">
+                                                    <a
+                                                        href="#trendingproduct">
+                                                        <div
+                                                            class="trending-product-container relative hidden">
+                                                            <div
+                                                                class="trending-product-image d-block">
+                                                                <img class="d-block"
+                                                                    src="./media/top-trending-4.svg"
+                                                                    alt="top-trending-4"
+                                                                    style="width: 100%;">
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div
+                                                        class="product-discription d-flex-column align-item-start row-gap-8">
+                                                        <span>Square
+                                                            Textured
+                                                            Striped</span>
+                                                        <img src="./media/rate.svg"
+                                                            alt="Rating">
+                                                        <span
+                                                            class="font-weight-500">$150.00
+                                                        </span>
+                                                        <div
+                                                            class="choose-color">
+                                                            <ul
+                                                                class="d-flex-row gap-5 padding-0 margin-0">
+                                                                <li
+                                                                    class="margin-0 d-inline-block">
+                                                                    <label
+                                                                        class="pointer">
+                                                                        <input
+                                                                            class="d-none"
+                                                                            type="radio"
+                                                                            name="color"
+                                                                            value="green">
+                                                                        <span
+                                                                            class="radio-check"
+                                                                            style="background-color: var(--fashiongreen);"></span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label>
+                                                                        <input
+                                                                            class="d-none"
+                                                                            type="radio"
+                                                                            name="color"
+                                                                            value="brown">
+                                                                        <span
+                                                                            class="radio-check"
+                                                                            style="background-color: var(--fashionbrown);"></span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label>
+                                                                        <input
+                                                                            class="d-none"
+                                                                            type="radio"
+                                                                            name="color"
+                                                                            value="tan">
+                                                                        <span
+                                                                            class="radio-check"
+                                                                            style="background-color: var(--fashiontan);"></span>
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="d-flex-column image-search row-gap-16">
+                                                    <a
+                                                        href="#trending">
+                                                        <div
+                                                            class="trending-product-container relative hidden">
+                                                            <div
+                                                                class="trending-product-image d-block">
+                                                                <img class=" d-block"
+                                                                    src="./media/top-trending-1.svg"
+                                                                    alt="top-trending-1"
+                                                                    style="width: 100%;">
+                                                            </div>
+
+                                                            <div
+                                                                class="extra-info absolute d-flex-column row-gap-3">
+                                                                <p
+                                                                    class="corner-info-search discount">
+                                                                    -10%
+                                                                </p>
+                                                                <p
+                                                                    class="corner-info-search pre-order">
+                                                                    Pre-Order
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+
+
+                                                    <div
+                                                        class="product-discription d-flex-column align-item-start row-gap-8">
+                                                        <span>Square
+                                                            Textured
+                                                            Striped</span>
+                                                        <img src="./media/rate.svg"
+                                                            alt="Rating">
+                                                        <span
+                                                            class="font-weight-500">$150.00</span>
+                                                        <div
+                                                            class="choose-color">
+                                                            <ul
+                                                                class="d-flex-row gap-5 padding-0 margin-0">
+                                                                <li
+                                                                    class="margin-0 d-inline-block">
+                                                                    <label
+                                                                        class="pointer">
+                                                                        <input
+                                                                            class="d-none"
+                                                                            type="radio"
+                                                                            name="color"
+                                                                            value="green">
+                                                                        <span
+                                                                            class="radio-check"
+                                                                            style="background-color: var(--fashiongreen);"></span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label>
+                                                                        <input
+                                                                            class="d-none"
+                                                                            type="radio"
+                                                                            name="color"
+                                                                            value="brown">
+                                                                        <span
+                                                                            class="radio-check"
+                                                                            style="background-color: var(--fashionbrown);"></span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label>
+                                                                        <input
+                                                                            class="d-none"
+                                                                            type="radio"
+                                                                            name="color"
+                                                                            value="tan">
+                                                                        <span
+                                                                            class="radio-check"
+                                                                            style="background-color: var(--fashiontan);"></span>
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div
+                                                    class="d-flex-column image-search row-gap-16">
+                                                    <a
+                                                        href="trending">
+                                                        <div
+                                                            class="trending-product-container relative hidden">
+                                                            <div
+                                                                class="trending-product-image d-block">
+                                                                <img class=" d-block"
+                                                                    src="./media/top-trending-2.svg"
+                                                                    alt="top-trending-2"
+                                                                    style="width: 100%;">
+                                                            </div>
+
+                                                        </div>
+                                                    </a>
+
+                                                    <div
+                                                        class="product-discription d-flex-column align-item-start row-gap-8">
+                                                        <span>Square
+                                                            Textured
+                                                            Striped</span>
+                                                        <img src="./media/rate.svg"
+                                                            alt="Rating">
+                                                        <span
+                                                            class="color-key-fashion font-weight-500">$150.00
+                                                            <span
+                                                                class="color-body-second"><s>$490.00</s>
+                                                            </span>
+                                                        </span>
+                                                        <div
+                                                            class="choose-color">
+                                                            <ul
+                                                                class="d-flex-row gap-5 padding-0 margin-0">
+                                                                <li
+                                                                    class="margin-0 d-inline-block">
+                                                                    <label
+                                                                        class="pointer">
+                                                                        <input
+                                                                            class="d-none"
+                                                                            type="radio"
+                                                                            name="color"
+                                                                            value="green">
+                                                                        <span
+                                                                            class="radio-check"
+                                                                            style="background-color: var(--fashiongreen);"></span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label>
+                                                                        <input
+                                                                            class="d-none"
+                                                                            type="radio"
+                                                                            name="color"
+                                                                            value="brown">
+                                                                        <span
+                                                                            class="radio-check"
+                                                                            style="background-color: var(--fashionbrown);"></span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label>
+                                                                        <input
+                                                                            class="d-none"
+                                                                            type="radio"
+                                                                            name="color"
+                                                                            value="tan">
+                                                                        <span
+                                                                            class="radio-check"
+                                                                            style="background-color: var(--fashiontan);"></span>
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                             <li class="sign-in">
-                                <a class="d-block" href="">
+                                <a class="icon-func d-block"
+                                    href="">
                                     <img src="./media/Login.svg"
                                         alt="Sign in"
                                         class="d-block">
@@ -1362,7 +2452,8 @@
                             </li>
 
                             <li>
-                                <a class="d-block" href="">
+                                <a class="icon-func d-block"
+                                    href="">
                                     <img src="./media/cart.svg"
                                         alt="Your cart"
                                         class="d-block">
@@ -1657,18 +2748,21 @@
 
                         <div
                             class="d-flex-column row-gap-10">
-                            <div
-                                class="swipe-to-see-more d-flex-row align-item-center justify-content-end col-gap-5">
-                                <div>
-                                    Swipe left to see more
+                            <em>
+                                <div
+                                    class="swipe-to-see-more d-flex-row align-item-center justify-content-end col-gap-5">
+                                    <div>
+                                        Swipe left to see
+                                        more
+                                    </div>
+                                    <div class="d-flex">
+                                        <i class="fa fa-solid fa-chevron-right"
+                                            style="color: #555555; font-size: 10px;"></i>
+                                        <i class="fa fa-solid fa-chevron-right"
+                                            style="color: #555555; font-size: 10px;"></i>
+                                    </div>
                                 </div>
-                                <div class="d-flex">
-                                    <i class="fa fa-solid fa-chevron-right"
-                                        style="color: #555555; font-size: 10px;"></i>
-                                    <i class="fa fa-solid fa-chevron-right"
-                                        style="color: #555555; font-size: 10px;"></i>
-                                </div>
-                            </div>
+                            </em>
 
                             <div
                                 class="top-trending-list d-flex-row justify-content-between">
@@ -2071,18 +3165,21 @@
 
                     <div
                         class="banner-wrapper d-flex-column hidden gap-10">
-                        <div
-                            class="swipe-to-see-more d-flex-row align-item-center justify-content-end col-gap-5">
-                            <div class="">
-                                Swipe left to see more
+                        <em>
+                            <div
+                                class="swipe-to-see-more d-flex-row align-item-center justify-content-end col-gap-5">
+                                <div>
+                                    Swipe left to see more
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fa fa-solid fa-chevron-right"
+                                        style="color: #555555; font-size: 10px;"></i>
+                                    <i class="fa fa-solid fa-chevron-right"
+                                        style="color: #555555; font-size: 10px;"></i>
+                                </div>
                             </div>
-                            <div class="d-flex">
-                                <i class="fa fa-solid fa-chevron-right"
-                                    style="color: #555555; font-size: 10px;"></i>
-                                <i class="fa fa-solid fa-chevron-right"
-                                    style="color: #555555; font-size: 10px;"></i>
-                            </div>
-                        </div>
+                        </em>
+
                         <div class="tablet-banner product-banner d-flex-row col-gap-30 row-gap-70 justify-content-between"
                             style="flex-wrap: nowrap; overflow-x: scroll;">
                             <div
@@ -2191,18 +3288,23 @@
                                 with.</h4>
                         </div>
                         <div class="d-flex-column gap-10">
-                            <div
-                                class="swipe-to-see-more d-flex-row align-item-center justify-content-end col-gap-5">
-                                <div class="">
-                                    Swipe left to see more
+                            <em>
+
+                                <div
+                                    class="swipe-to-see-more d-flex-row align-item-center justify-content-end col-gap-5">
+                                    <div>
+                                        Swipe left to see
+                                        more
+                                    </div>
+                                    <div class="d-flex">
+                                        <i class="fa fa-solid fa-chevron-right"
+                                            style="color: #555555; font-size: 10px;"></i>
+                                        <i class="fa fa-solid fa-chevron-right"
+                                            style="color: #555555; font-size: 10px;"></i>
+                                    </div>
                                 </div>
-                                <div class="d-flex">
-                                    <i class="fa fa-solid fa-chevron-right"
-                                        style="color: #555555; font-size: 10px;"></i>
-                                    <i class="fa fa-solid fa-chevron-right"
-                                        style="color: #555555; font-size: 10px;"></i>
-                                </div>
-                            </div>
+                            </em>
+
                             <div
                                 class="must-have-list d-flex-row justify-content-between">
                                 <div
@@ -2877,7 +3979,12 @@
                                         spellcheck="false"
                                         required>
                                     <a
-                                        class="subcribe btn font-size-12 pointer">SUBCRIBE
+                                        class="subcribe btn font-size-12 pointer relative">
+                                        <i class="fa-solid fa-arrow-right-long"
+                                            style="color: #ffffff;"></i>
+                                        <span>
+                                            SUBCRIBE
+                                        </span>
                                     </a>
                                 </div>
                             </div>
@@ -3103,8 +4210,14 @@
                                         autocomplete="off"
                                         spellcheck="false"
                                         required>
+
                                     <a
-                                        class="subcribe btn font-size-12 pointer">SUBCRIBE
+                                        class="subcribe btn font-size-12 pointer relative">
+                                        <i class="fa-solid fa-arrow-right-long"
+                                            style="color: #ffffff;"></i>
+                                        <span>
+                                            SUBCRIBE
+                                        </span>
                                     </a>
                                 </div>
                             </div>

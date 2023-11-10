@@ -64,6 +64,8 @@
     top: 100%;
     left: 0;
     margin-left: -3.2rem;
+    transition: all .5s ease;
+    opacity: 0;
 }
 
 .tool-tip-text::after {
@@ -79,6 +81,7 @@
 
 .tool-tip:hover .tool-tip-text {
     visibility: visible;
+    opacity: 1;
 }
 
 .footer-head a {
@@ -206,6 +209,59 @@
     color: var(--base-color);
 }
 
+.subcribe {
+    width: 13.5rem;
+    height: 4.4rem;
+}
+
+.subcribe i {
+    position: absolute;
+    font-size: 2rem;
+    top: 29%;
+    transform: translateX(-23%);
+    left: 42%;
+    transform: translateY(-40%);
+    transition: all .4s ease-in-out;
+    transform: translateX(-500%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.subcribe span {
+    position: absolute;
+    font-size: 1.4rem;
+    color: var(--bg);
+    opacity: 1;
+    visibility: visible;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25%;
+    right: 25%;
+    margin: auto;
+    transition: all .4s ease-in-out;
+}
+
+.subcribe:hover i {
+    transform: translateX(0);
+    transition: all .5s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+
+.subcribe:hover span {
+    transform: translateX(500%);
+    transition: all .5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media only screen and (min-width: 350px) {
+    .subcribe {
+        width: 14rem;
+        height: 5rem;
+    }
+}
+
 @media only screen and (min-width: 576px) {
 
     .contact {
@@ -323,6 +379,10 @@
     .footer-large-screen {
         display: flex;
     }
+
+    input::placeholder {
+        font-size: 1.4rem;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -345,6 +405,10 @@
 
     .container-footer-tail {
         padding: 0 3rem 1rem 3rem;
+    }
+
+    input::placeholder {
+        font-size: 1.6rem;
     }
 }
 
