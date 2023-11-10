@@ -33,10 +33,16 @@
 .icon-nav {
     flex: 0 0 19%;
     padding: 1rem 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 0.9rem;
     font-weight: 500;
+}
+
+.icon-nav:first-child {
+    border-radius: 3rem 0 0 3rem;
+}
+
+.icon-nav:last-child {
+    border-radius: 0 3rem 3rem 0;
 }
 
 .icon-nav a {
@@ -361,7 +367,7 @@ input[type=text] {
     transition: all 0.4s ease-out;
 }
 
-.nav-item a {
+.nav-item>a {
     display: block;
     height: 100%;
     line-height: 1.5;
@@ -375,7 +381,20 @@ input[type=text] {
     transition: .4s;
 }
 
-.nav-item:not(:last-child) a {
+/* .sub-nav-link {
+    height: 100%;
+    line-height: 1.5;
+    padding: 1.2rem 0 !important;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: var(--base-color);
+    transition: .4s;
+} */
+
+.sub-nav-link:not(:last-child) a {
     border-bottom: 1px solid #EBEBEB;
 }
 
@@ -399,10 +418,10 @@ input[type=text] {
 } */
 
 .sub-nav-shop {
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
-    top: -5.55rem;
+    top: 0;
     width: 30rem;
     height: 100vh;
     background-color: var(--bg);

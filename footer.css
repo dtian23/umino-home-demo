@@ -301,7 +301,7 @@
     .column {
         width: 100%;
         align-items: start;
-        padding-top: 1.5rem;
+        padding-top: 1rem;
         padding-bottom: 1.5rem;
     }
 
@@ -310,6 +310,7 @@
     .customer-service,
     .newsletter {
         border-bottom: 1px solid #f6eaea;
+        margin-bottom: 0.5rem;
     }
 
     .footer-head {
