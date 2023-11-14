@@ -53,17 +53,16 @@
 
 .tool-tip-text {
     visibility: hidden;
-    width: 10rem;
     background-color: black;
     color: var(--bg);
     text-align: center;
     border-radius: 6px;
-    padding: 1rem 0;
+    padding: 1rem 2rem;
     position: absolute;
     z-index: 1;
     top: 100%;
-    left: 0;
-    margin-left: -3.4rem;
+    left: 50%;
+    transform: translateX(-50%);
     transition: all .5s ease;
     opacity: 0;
 }
