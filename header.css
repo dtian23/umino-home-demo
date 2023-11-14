@@ -27,7 +27,11 @@
     width: 95%;
     background-color: var(--bg);
     border-radius: 3rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+}
+
+.icon-tabler {
+    padding-top: .5rem;
 }
 
 .icon-nav {
@@ -85,7 +89,6 @@ input[type=text] {
     background-color: var(--bg);
     visibility: hidden;
     transform: translateY(-100%);
-    /* border-radius: 0 0 1.3rem 1.3rem; */
     left: 0;
     right: 0;
     top: 0;
@@ -273,12 +276,6 @@ input[type=text] {
     transition: 0.4s all ease-in-out;
 }
 
-
-/* .menu-image:hover {
-    transform: scale(1.1);
-} */
-
-
 .dropbtn:hover {
     cursor: pointer;
 }
@@ -287,7 +284,6 @@ input[type=text] {
 .dropdown-item-mega-product a:hover,
 .dropdown-item-small-blog a:hover,
 .dropdown-item-small-page a:hover {
-    /* background-color: #ddd; */
     color: var(--base-color);
 }
 
@@ -338,10 +334,6 @@ input[type=text] {
     display: none;
 }
 
-.topLink {
-    justify-content: space-between;
-}
-
 .menu ul li:hover .nav-link,
 .menu ul li:hover .nav-link i {
     color: red !important;
@@ -354,6 +346,7 @@ input[type=text] {
     top: 0;
     width: 30rem;
     height: 100%;
+    min-height: 100%;
     background-color: var(--bg);
     transform: translateX(-100%);
     transform-origin: left;
@@ -381,28 +374,13 @@ input[type=text] {
     transition: .4s;
 }
 
-/* .sub-nav-link {
-    height: 100%;
-    line-height: 1.5;
-    padding: 1.2rem 0 !important;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    box-sizing: border-box;
-    font-weight: 500;
-    font-size: 1.6rem;
-    color: var(--base-color);
-    transition: .4s;
-} */
+.nav-item:not(:last-child)>a {
+    border-bottom: 1px solid var(--border-nav);
+}
 
 .sub-nav-link:not(:last-child) a {
     border-bottom: 1px solid #EBEBEB;
 }
-
-/* .nav-item a:hover {
-    color: var(--base-color);
-    background-color: #EBEBEB;
-    transition: all 0.4s ease-out;
-} */
 
 .nav-item:hover,
 .sub-nav-item:hover {
@@ -410,12 +388,6 @@ input[type=text] {
     background-color: #EBEBEB;
     transition: 0.4s ease-out;
 }
-
-/* #nav-list li:hover {
-    color: var(--base-color);
-    background-color: #EBEBEB;
-    transition: all 0.4s ease-out;
-} */
 
 .sub-nav-shop {
     position: absolute;
@@ -487,13 +459,45 @@ header {
     z-index: 999;
 }
 
-.carousel-container {
-    margin-top: 9.1rem;
+.signUp span,
+.phoneMail span,
+.language>*,
+.nav-left img {
+    padding: 0 1.5rem;
 }
 
-/* .mobile-navbar ul {
-    column-gap: 1rem;
-} */
+.icon-func {
+    padding: 0 1.5rem 0 0.5rem;
+}
+
+.language {
+    display: none;
+}
+
+.topLink {
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.mobile-navbar>img {
+    margin-left: 7rem;
+}
+
+.nav-center li {
+    padding: 0 1.5rem 0 0.5rem;
+}
+
+.menu,
+.phoneMail {
+    display: none;
+}
+
+.mobile-navbar i {
+    font-size: 1.2rem;
+    color: var(--base-color);
+    margin: auto 0;
+    cursor: pointer;
+}
 
 @media only screen and (min-width: 425px) {
     .icon-nav {
@@ -513,10 +517,6 @@ header {
         padding-left: 1.5rem;
     }
 
-    .carousel-container {
-        margin-top: 9.9rem;
-    }
-
     .icon-func {
         padding: 0 1.5rem;
     }
@@ -524,25 +524,6 @@ header {
     .input-search {
         width: 65%;
     }
-}
-
-.signUp span,
-.phoneMail span,
-.language>*,
-.nav-left img {
-    padding: 0 1.5rem;
-}
-
-.icon-func {
-    padding: 0 1.5rem 0 0.5rem;
-}
-
-.language {
-    display: none;
-}
-
-.topLink {
-    justify-content: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -554,9 +535,6 @@ header {
         justify-content: space-between;
     }
 
-    .carousel-container {
-        margin-top: 10.2rem;
-    }
 }
 
 @media only screen and (min-width: 769px) {
@@ -564,37 +542,6 @@ header {
     .fixed-mobile-nav {
         display: none;
     }
-}
-
-.topLink {
-    font-size: 1.2rem;
-}
-
-.mobile-navbar>img {
-    margin-left: 7rem;
-}
-
-.nav-center li {
-    padding: 0 1.5rem 0 0.5rem;
-}
-
-/* 
-.menu ul:last-child li {
-    padding: 0 1rem;
-} */
-
-.menu {
-    display: none;
-}
-
-.phoneMail {
-    display: none;
-}
-
-.mobile-navbar i {
-    font-size: 2rem;
-    margin: auto 0;
-    cursor: pointer;
 }
 
 @media only screen and (min-width: 992px) {

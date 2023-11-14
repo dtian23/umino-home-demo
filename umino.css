@@ -24,7 +24,7 @@
 }
 
 * {
-    font-family: 'Jost', sans-serif;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -41,6 +41,7 @@ html {
 }
 
 body {
+    font-family: 'Jost', sans-serif;
     color: var(--base-color);
     font-size: var(--base-font-size);
     font-weight: var(--base-font-weight);
@@ -100,6 +101,10 @@ button {
 
 .d-inline-block {
     display: inline-block;
+}
+
+.no-wrap {
+    flex-wrap: nowrap;
 }
 
 .d-flex {
@@ -162,10 +167,6 @@ button {
 
 .row-gap-16 {
     row-gap: 1.6rem;
-}
-
-.row-gap-20 {
-    row-gap: 2rem;
 }
 
 .gap-5 {
@@ -446,18 +447,12 @@ button {
     border-radius: 5rem;
 }
 
-/* .btn:hover {
-    background-color: rgb(215, 215, 215);
-    color: black;
-} */
-
 .btn-second {
     color: #111111;
     background-color: var(--bg);
-    width: 18rem;
-    height: 5rem;
+    padding: .6rem 3rem;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 500;
     border: none;
     border-radius: 30px;
@@ -500,10 +495,6 @@ button {
     bottom: 3rem;
     left: 50%;
     transform: translateX(-50%);
-}
-
-.pointer {
-    cursor: pointer;
 }
 
 .full-width {
@@ -551,7 +542,6 @@ a:hover {
 
 h1 {
     font-size: 3.5rem;
-    line-height: 1;
 }
 
 h2 {
@@ -564,7 +554,6 @@ h3 {
 
 h4 {
     font-size: 1.6rem;
-    /* font-weight: 500; */
 }
 
 h5 {
@@ -581,15 +570,10 @@ h5 {
 @media only screen and (min-width: 768px) {
     h1 {
         font-size: 5rem;
-        line-height: 1;
     }
 
     h2 {
         font-size: 4.5rem;
-    }
-
-    h3 {
-        font-size: clamp(2.2rem, 3vw, 3rem);
     }
 
     h5 {
@@ -600,30 +584,12 @@ h5 {
 @media only screen and (min-width: 1200px) {
     h1 {
         font-size: 8rem;
-        line-height: 1;
-    }
-
-    h2 {
-        font-size: 4.5rem;
-    }
-
-    h3 {
-        font-size: clamp(2.2rem, 3vw, 3rem);
-    }
-
-    h5 {
-        font-size: 1.8rem;
     }
 }
 
 @media only screen and (min-width: 2000px) {
     h1 {
         font-size: 10rem;
-        line-height: 1;
-    }
-
-    h2 {
-        font-size: 4.5rem;
     }
 
     h3 {
@@ -632,10 +598,6 @@ h5 {
 
     h4 {
         font-size: 2rem;
-    }
-
-    h5 {
-        font-size: 1.8rem;
     }
 }
 
