@@ -508,7 +508,7 @@ details>summary::-webkit-details-marker {
     }
 
     .btn-second {
-        padding: 1.3rem 5rem;
+        padding: 1.1rem 4rem;
     }
 }
 
@@ -744,8 +744,13 @@ details>summary::-webkit-details-marker {
 
 @media only screen and (min-width: 1200px) {
 
-    .btn-second {
+    /* .btn-second {
         padding: 1.8rem 7rem;
+    } */
+
+    .btn-second {
+        font-size: 2rem;
+        padding: 2rem 8rem;
     }
 
     .container-main,
@@ -776,10 +781,6 @@ details>summary::-webkit-details-marker {
         padding: 2rem 5.6rem;
     }
 
-    .btn-second {
-        font-size: 2rem;
-        padding: 2rem 8rem;
-    }
 
     .absolute-side {
         bottom: 3rem;

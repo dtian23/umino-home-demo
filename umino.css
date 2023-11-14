@@ -448,6 +448,7 @@ button {
 }
 
 .btn-second {
+    font-family: 'Jost', sans-serif;
     color: #111111;
     background-color: var(--bg);
     padding: .6rem 3rem;

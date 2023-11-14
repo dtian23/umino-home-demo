@@ -153,6 +153,10 @@ input[type=text] {
     height: 2.5rem;
 }
 
+.dropbtn span {
+    font-family: 'Jost', sans-serif;
+}
+
 .dropdown-item {
     visibility: hidden;
     opacity: 0;
