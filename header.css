@@ -237,7 +237,7 @@ input[type=text] {
 
 .mega-menu-shop,
 .mega-product {
-    box-shadow: 0 0 3px #00000026;
+    /* box-shadow: 0 0 3px #00000026; */
     padding: 0 3rem;
 }
 
