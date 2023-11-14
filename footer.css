@@ -208,7 +208,7 @@
 .subcribe i {
     position: absolute;
     font-size: 2.2rem;
-    left: 40%;
+    left: 43%;
     transition: all .4s ease-in-out;
     transform: translateX(-500%);
     opacity: 0;
