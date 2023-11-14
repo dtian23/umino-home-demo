@@ -3,9 +3,9 @@
 :root {
     --bg: #FFFFFF;
     --base-color: #111111;
-    --keyFashion: #D73F0F;
-    --bodySecond: #999999;
-    --bodyFashion: #555555;
+    --key-fashion: #D73F0F;
+    --body-second: #999999;
+    --body-fashion: #555555;
     --fashiongreen: #08382C;
     --fashionbrown: #492919;
     --fashiontan: #DFD3C2;
@@ -311,15 +311,15 @@ button {
 }
 
 .color-body-fashion {
-    color: var(--bodyFashion);
+    color: var(--body-fashion);
 }
 
 .color-body-second {
-    color: var(--bodySecond);
+    color: var(--body-second);
 }
 
 .color-key-fashion {
-    color: var(--keyFashion);
+    color: var(--key-fashion);
 }
 
 .font-weight-500 {
@@ -545,7 +545,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.1rem;
+    font-size: 3.2rem;
 }
 
 h3 {
@@ -559,12 +559,6 @@ h4 {
 h5 {
     font-size: 1.6rem;
     font-weight: 500;
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-    h3 {
-        font-size: 3rem;
-    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -592,12 +586,8 @@ h5 {
         font-size: 10rem;
     }
 
-    h3 {
-        font-size: 3rem;
-    }
-
     h4 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
 

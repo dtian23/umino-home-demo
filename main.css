@@ -525,7 +525,7 @@ details>summary::-webkit-details-marker {
     .banner-wrapper .swipe-to-see-more {
         display: flex;
         font-size: 1.5rem;
-        color: var(--bodyFashion);
+        color: var(--body-fashion);
     }
 
     .tablet-banner {
@@ -554,7 +554,7 @@ details>summary::-webkit-details-marker {
         padding: 2rem 2rem 3rem 2rem;
         width: 100%;
         border-radius: 1rem;
-        background: linear-gradient(0deg, var(--bodyFashion), rgba(255, 255, 255, 0));
+        background: linear-gradient(0deg, var(--body-fashion), rgba(255, 255, 255, 0));
     }
 }
 
@@ -564,7 +564,7 @@ details>summary::-webkit-details-marker {
     .product-top-trending .swipe-to-see-more {
         display: flex;
         font-size: 1.5rem;
-        color: var(--bodyFashion);
+        color: var(--body-fashion);
     }
 
     .carousel-container {
