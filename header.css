@@ -150,12 +150,11 @@ input[type=text] {
     border: none;
     cursor: pointer;
     position: relative;
-    height: 2.5rem;
 }
 
-.dropbtn span {
+/* .dropbtn span {
     font-family: 'Jost', sans-serif;
-}
+} */
 
 .dropdown-item {
     visibility: hidden;
@@ -307,12 +306,12 @@ input[type=text] {
 }
 
 .nav-left {
-    flex: 1 1 0px;
+    flex: 1 1 0;
     max-height: 2rem;
 }
 
 .nav-right {
-    flex: 1 1 0px;
+    flex: 1 1 0;
     justify-content: flex-end !important;
 }
 
@@ -574,7 +573,7 @@ header {
         position: absolute;
         right: 0;
         left: 0;
-        height: 3rem;
+        /* height: 3rem; */
         z-index: 1;
     }
 }
