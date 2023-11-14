@@ -85,7 +85,7 @@
 }
 
 .footer-head a {
-    color: var(--bodyFashion);
+    color: var(--body-fashion);
     text-decoration: none;
 }
 
@@ -106,7 +106,7 @@
 
 .newsletter p {
     margin: 0;
-    color: var(--bodyFashion);
+    color: var(--body-fashion);
 }
 
 .newsletter input {
@@ -157,7 +157,7 @@
 
 .dropbtn-footer {
     background-color: var(--bg);
-    color: var(--bodyFashion);
+    color: var(--body-fashion);
     border: none;
     cursor: pointer;
     position: relative;
@@ -166,6 +166,7 @@
 
 .dropbtn-footer>span {
     font-size: 1.4rem;
+    font-family: 'Jost', sans-serif;
 }
 
 .dropdown-item-footer {
@@ -189,7 +190,7 @@
 
 .dropdown-item-footer a {
     float: none;
-    color: var(--bodyFashion);
+    color: var(--body-fashion);
     font-size: 1.4rem;
     padding: 0.5rem 0;
     text-decoration: none;
@@ -206,11 +207,11 @@
 
 .subcribe i {
     position: absolute;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     top: 29%;
-    transform: translateX(-23%);
-    left: 42%;
-    transform: translateY(-40%);
+    /* transform: translateX(-23%); */
+    left: 40%;
+    /* transform: translateY(-40%); */
     transition: all .4s ease-in-out;
     transform: translateX(-500%);
     opacity: 0;
