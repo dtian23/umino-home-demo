@@ -257,11 +257,12 @@
     width: 30%;
 }
 
-@media only screen and (max-width: 375px) {
-    .btn {
-        font-size: .8rem;
-        padding: 1rem 1.5rem;
-    }
+.contact,
+.hot-categories,
+.customer-service,
+.newsletter {
+    width: 50%;
+    margin-top: 4rem;
 }
 
 @media only screen and (min-width: 576px) {
@@ -283,12 +284,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .container-footer {
-        padding-bottom: 12rem;
-    }
-}
-
-@media only screen and (max-width: 769px) {
 
     details {
         padding: 0;
@@ -305,7 +300,6 @@
     }
 
     .column {
-        width: 100%;
         align-items: start;
         padding-top: 1rem;
         padding-bottom: 1.5rem;
@@ -331,9 +325,7 @@
         row-gap: 0.6rem;
     }
 
-}
 
-@media only screen and (max-width: 768px) {
     .footer-extra-small-screen {
         display: flex;
     }
@@ -345,24 +337,19 @@
     .footer-large-screen {
         display: none;
     }
-}
-
-@media only screen and (min-width: 769px) {
-
-    .col-xl-2,
-    .col-xl-3 {
-        width: 50%;
-    }
 
     .contact,
     .hot-categories,
     .customer-service,
     .newsletter {
-        margin-top: 4rem;
+        width: 100% !important;
+        margin-top: 0 !important;
     }
-}
 
-@media only screen and (max-width: 768px) {
+    .container-footer {
+        padding-bottom: 12rem;
+    }
+
     .footer-menu-desktop {
         display: none;
     }
