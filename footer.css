@@ -200,6 +200,10 @@
     color: var(--base-color);
 }
 
+.payment {
+    padding: 0 .5rem;
+}
+
 .subcribe {
     background-color: var(--base-color);
     padding: 1rem 2rem;

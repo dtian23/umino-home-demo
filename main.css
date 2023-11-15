@@ -1,7 +1,7 @@
 .container-main {
     margin-left: auto;
     margin-right: auto;
-    padding: 0 1.5rem;
+    padding: 0;
     max-width: 147rem;
 }
 
@@ -61,15 +61,10 @@
     width: 100%;
 }
 
-.top-trending-list,
-.must-have-list {
-    column-gap: 1.5rem;
-    row-gap: 3rem;
-}
-
 .image-category {
     flex: 1 0 auto;
     width: calc((100% - 30px)/2);
+    padding: 1.5rem;
 }
 
 .image-search {
@@ -105,10 +100,12 @@
     display: flex;
     flex: 1 0 auto;
     width: 100%;
+    padding: 1.5rem;
 }
 
 .banner-image {
     width: 100%;
+    /* height: 100%; */
     /* max-width: 100%; */
     border-radius: 1rem;
 }
@@ -143,9 +140,9 @@
 }
 
 .banner-discription {
-    bottom: 0;
-    left: 0;
-    right: 0;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
 }
 
 .tablet-banner {
@@ -156,11 +153,15 @@
     display: none;
 }
 
-.image-instagram {
+.instagram-container {
     display: flex;
     flex: 1 0 auto;
     width: calc((100% - 3rem)/2);
     height: 100%;
+    padding: 1.5rem;
+}
+
+.image-instagram {
     border-radius: 1rem;
 }
 
@@ -346,10 +347,6 @@
     row-gap: 1.5rem;
 }
 
-.insta-tail {
-    gap: 1.5rem;
-}
-
 details>summary {
     list-style: none;
 }
@@ -459,10 +456,6 @@ details>summary::-webkit-details-marker {
         display: flex;
     }
 
-    .insta-tail {
-        gap: 3rem;
-    }
-
     .slider-prev {
         left: 3rem;
     }
@@ -498,13 +491,8 @@ details>summary::-webkit-details-marker {
         row-gap: 2rem;
     }
 
-    .image-instagram {
+    .instagram-container {
         width: calc((100% - 30px*2)/3);
-    }
-
-    .top-trending-list,
-    .must-have-list {
-        column-gap: 3rem;
     }
 
     .btn-second {
@@ -538,11 +526,11 @@ details>summary::-webkit-details-marker {
 
     .banner-item {
         width: 60%;
-        aspect-ratio: 450/555;
+        /* aspect-ratio: 450/555; */
         border-radius: 1rem;
     }
 
-    .banner-discription a {
+    .banner-discription {
         color: var(--bg);
     }
 
@@ -552,7 +540,6 @@ details>summary::-webkit-details-marker {
 
     .gradient {
         padding: 2rem 2rem 3rem 2rem;
-        width: 100%;
         border-radius: 1rem;
         background: linear-gradient(0deg, var(--body-fashion), rgba(255, 255, 255, 0));
     }
@@ -589,7 +576,7 @@ details>summary::-webkit-details-marker {
 
     .image-category,
     .image-search {
-        width: 30.1%;
+        width: 33.3333333%;
     }
 }
 
@@ -720,12 +707,8 @@ details>summary::-webkit-details-marker {
 }
 
 @media only screen and (min-width: 992px) {
-    .image-instagram {
+    .instagram-container {
         width: calc((100% - .5rem*5)/6);
-    }
-
-    .insta-tail {
-        gap: .5rem;
     }
 
     .image-category {
@@ -760,12 +743,18 @@ details>summary::-webkit-details-marker {
     .top-trending>div {
         padding-bottom: 5rem;
     }
-
 }
 
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1200px) {
     .shop-by-gram {
         padding-top: 8rem;
+    }
+
+    .product-you-must-have,
+    .product-top-trending,
+    .shop-by-gram,
+    .screen-banner {
+        margin: 0 -1.5rem;
     }
 }
 
