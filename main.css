@@ -524,6 +524,7 @@ details>summary::-webkit-details-marker {
 
     .banner-wrapper {
         display: flex;
+        padding-top: 8rem;
     }
 
     .banner-wrapper .swipe-to-see-more {
@@ -776,17 +777,17 @@ details>summary::-webkit-details-marker {
     .shop-by-gram {
         margin: 0 -0.25rem;
     }
+
+    .btn {
+        font-size: 1.6rem;
+        padding: 2rem 5.6rem;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
 
     .container-banner {
         margin: 0;
-    }
-
-    .btn {
-        font-size: 1.6rem;
-        padding: 2rem 5.6rem;
     }
 
     .btn-second {
@@ -823,6 +824,7 @@ details>summary::-webkit-details-marker {
     .product-top-trending,
     .product-you-must-have,
     .screen-banner,
+    .banner-wrapper,
     .shop-by-gram {
         padding-top: 10rem;
     }

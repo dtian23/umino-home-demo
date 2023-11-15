@@ -257,6 +257,14 @@
     width: 30%;
 }
 
+.footer-language {
+    margin-left: -1.5rem;
+}
+
+.payment-method {
+    margin-right: -0.5rem;
+}
+
 .contact,
 .hot-categories,
 .customer-service,
