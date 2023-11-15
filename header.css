@@ -132,6 +132,7 @@ input[type=text] {
     font-size: 2rem;
     font-weight: 500;
     padding: 0 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .underline {
@@ -160,7 +161,7 @@ input[type=text] {
     visibility: hidden;
     opacity: 0;
     top: 5rem;
-    right: 0;
+    left: 0;
     position: absolute;
     background-color: var(--base-color);
     border-radius: 0 0 1rem 1rem;
@@ -173,7 +174,7 @@ input[type=text] {
     visibility: visible;
     opacity: 1;
     top: 1.8rem;
-    transition: all 0.7s;
+    transition: all 0.3s;
 }
 
 .dropdown-item a {
@@ -300,7 +301,7 @@ input[type=text] {
 .dropdown:hover .dropdown-item-mega-shop,
 .dropdown:hover .dropdown-item-mega-product {
     transition: all 0.7s;
-    top: 4.5rem;
+    top: 4.1rem;
     opacity: 1;
     visibility: visible;
 }
