@@ -1,7 +1,7 @@
 .container-footer {
     margin-left: auto;
     margin-right: auto;
-    padding: 8rem 1.5rem 4rem 1.5rem;
+    padding: 4rem 1.5rem;
     max-width: 147rem;
 }
 
@@ -249,6 +249,14 @@
     visibility: hidden;
 }
 
+.footer-large-screen>div {
+    width: 35%;
+}
+
+.footer-large-screen>p {
+    width: 30%;
+}
+
 @media only screen and (max-width: 375px) {
     .btn {
         font-size: .8rem;
@@ -340,27 +348,18 @@
 }
 
 @media only screen and (min-width: 769px) {
-    /* .footer-extra-small-screen {
-        display: none;
-    }
-
-    .footer-small-screen {
-        display: flex;
-    }
-
-    .footer-large-screen {
-        display: none;
-    } */
 
     .col-xl-2,
     .col-xl-3 {
         width: 50%;
     }
 
-    .footer-head>div {
-        row-gap: 4rem;
+    .contact,
+    .hot-categories,
+    .customer-service,
+    .newsletter {
+        margin-top: 4rem;
     }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -379,18 +378,6 @@
 
 @media only screen and (min-width: 992px) {
 
-    .footer-extra-small-screen {
-        display: none;
-    }
-
-    .footer-small-screen {
-        display: none;
-    }
-
-    .footer-large-screen {
-        display: flex;
-    }
-
     input::placeholder {
         font-size: 1.4rem;
     }
@@ -407,8 +394,20 @@
         width: 16.6666667%;
     }
 
+    .footer-extra-small-screen {
+        display: none;
+    }
+
+    .footer-small-screen {
+        display: none;
+    }
+
+    .footer-large-screen {
+        display: flex;
+    }
+
     .container-footer {
-        padding: 10rem 3rem 4rem 3rem;
+        padding: 6rem 3rem 4rem 3rem;
     }
 
     .container-footer-tail {

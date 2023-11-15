@@ -417,6 +417,12 @@ details>summary::-webkit-details-marker {
     transform: translateY(-50%);
 }
 
+.top-trending-head,
+.must-have-head,
+.insta-head {
+    padding-bottom: 4rem;
+}
+
 .insta-tail {
     padding: 0 1.5rem;
 }
