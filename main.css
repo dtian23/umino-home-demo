@@ -5,6 +5,13 @@
     max-width: 147rem;
 }
 
+.container-banner {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
 .black-beanie {
     display: flex;
     width: 100%;
@@ -105,8 +112,6 @@
 
 .banner-image {
     width: 100%;
-    /* height: 100%; */
-    /* max-width: 100%; */
     border-radius: 1rem;
 }
 
@@ -151,6 +156,7 @@
 
 .swipe-to-see-more {
     display: none;
+    padding-right: 1.5rem;
 }
 
 .instagram-container {
@@ -159,6 +165,8 @@
     width: calc((100% - 3rem)/2);
     height: 100%;
     padding: 1.5rem;
+    border-radius: 1rem;
+    padding: .25rem;
 }
 
 .image-instagram {
@@ -330,12 +338,9 @@
     display: flex;
 }
 
-.product-top-trending {
-    margin-top: 8rem;
-}
-
-.main-tail>div {
-    row-gap: 8rem;
+.product-top-trending,
+.product-you-must-have {
+    padding-top: 8rem;
 }
 
 .product-discription span {
@@ -389,6 +394,7 @@ details>summary::-webkit-details-marker {
 
 .screen-banner {
     display: flex;
+    padding-top: 8rem;
 }
 
 :root {
@@ -411,7 +417,11 @@ details>summary::-webkit-details-marker {
     transform: translateY(-50%);
 }
 
-@media only screen and (max-width: 469px),
+.insta-tail {
+    padding: 0 1.5rem;
+}
+
+@media only screen and (max-width: 576px),
 (min-width: 992px) {
     .banner-image:hover {
         transform: scale(1.1);
@@ -423,7 +433,7 @@ details>summary::-webkit-details-marker {
 
 }
 
-@media only screen and (min-width: 426px) {
+@media only screen and (min-width: 576px) {
 
     .product-discription span {
         font-size: 1.4rem;
@@ -436,7 +446,7 @@ details>summary::-webkit-details-marker {
 
 }
 
-@media only screen and (max-width: 480px),
+@media only screen and (max-width: 576px),
 (min-width: 992px) and (max-width: 1400px) {
 
     .corner-info-search {
@@ -500,7 +510,7 @@ details>summary::-webkit-details-marker {
     }
 }
 
-@media only screen and (min-width: 470px) and (max-width: 992px) {
+@media only screen and (min-width: 576px) and (max-width: 992px) {
 
     .screen-banner {
         display: none;
@@ -526,7 +536,6 @@ details>summary::-webkit-details-marker {
 
     .banner-item {
         width: 60%;
-        /* aspect-ratio: 450/555; */
         border-radius: 1rem;
     }
 
@@ -670,6 +679,10 @@ details>summary::-webkit-details-marker {
         padding: 1.5rem 4rem;
     }
 
+    .btn-second {
+        padding: 0.8rem 3.5rem;
+    }
+
     .carousel-container {
         margin-bottom: .5rem;
         margin-top: 10.2rem;
@@ -732,7 +745,8 @@ details>summary::-webkit-details-marker {
     }
 
     .container-main,
-    .main-head-mobile {
+    .main-head-mobile,
+    .container-banner {
         padding: 0 3rem;
     }
 
@@ -746,19 +760,23 @@ details>summary::-webkit-details-marker {
 }
 
 @media only screen and (min-width: 1200px) {
-    .shop-by-gram {
-        padding-top: 8rem;
-    }
 
     .product-you-must-have,
     .product-top-trending,
-    .shop-by-gram,
     .screen-banner {
         margin: 0 -1.5rem;
+    }
+
+    .shop-by-gram {
+        margin: 0 -0.25rem;
     }
 }
 
 @media only screen and (min-width: 1400px) {
+
+    .container-banner {
+        margin: 0;
+    }
 
     .btn {
         font-size: 1.6rem;
@@ -779,14 +797,28 @@ details>summary::-webkit-details-marker {
     }
 
     .product-top-trending {
-        margin-top: 10rem;
+        padding-top: 10rem;
     }
 
-    .main-tail>div {
-        row-gap: 10rem;
+    .insta-tail {
+        padding: 0;
     }
 
+    .banner-item {
+        position: relative;
+    }
+
+    .banner-title {
+        position: absolute;
+        left: 10%;
+        bottom: 9%;
+    }
+
+    .product-top-trending,
+    .product-you-must-have,
+    .screen-banner,
     .shop-by-gram {
         padding-top: 10rem;
     }
+
 }

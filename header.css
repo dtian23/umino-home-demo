@@ -19,6 +19,7 @@
 }
 
 .fixed-mobile-nav {
+    display: none;
     position: fixed;
     flex-wrap: nowrap;
     top: 90%;
@@ -27,7 +28,7 @@
     width: 95%;
     background-color: var(--bg);
     border-radius: 3rem;
-    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+    box-shadow: 0px 0px 30px 8px rgba(100, 100, 111, 0.2);
 }
 
 .icon-tabler {
@@ -152,10 +153,6 @@ input[type=text] {
     cursor: pointer;
     position: relative;
 }
-
-/* .dropbtn span {
-    font-family: 'Jost', sans-serif;
-} */
 
 .dropdown-item {
     visibility: hidden;
@@ -510,6 +507,14 @@ header {
 }
 
 @media only screen and (min-width: 576px) {
+    .language {
+        display: flex;
+    }
+
+    .topLink {
+        justify-content: space-between;
+    }
+
     .container-header {
         margin-left: auto;
         margin-right: auto;
@@ -526,21 +531,10 @@ header {
     }
 }
 
-@media only screen and (min-width: 768px) {
-    .language {
-        display: flex;
-    }
-
-    .topLink {
-        justify-content: space-between;
-    }
-
-}
-
-@media only screen and (min-width: 769px) {
+@media only screen and (max-width: 768px) {
 
     .fixed-mobile-nav {
-        display: none;
+        display: flex;
     }
 }
 
@@ -552,10 +546,6 @@ header {
     .phoneMail {
         display: flex;
     }
-
-}
-
-@media only screen and (min-width: 992px) {
 
     .mobile-navbar {
         display: none;
