@@ -154,6 +154,14 @@ input[type=text] {
     position: relative;
 }
 
+.choose-language {
+    min-width: 12rem;
+}
+
+.choose-currency {
+    min-width: 15rem;
+}
+
 .dropdown-item {
     visibility: hidden;
     opacity: 0;
@@ -298,7 +306,7 @@ input[type=text] {
 .dropdown:hover .dropdown-item-mega-shop,
 .dropdown:hover .dropdown-item-mega-product {
     transition: all 0.4s;
-    top: 4.1rem;
+    top: 6.1rem;
     opacity: 1;
     visibility: visible;
 }
@@ -558,6 +566,7 @@ header {
     .dropdown>a::after {
         content: "";
         position: absolute;
+        height: 5rem;
         right: 0;
         left: 0;
         z-index: 1;
