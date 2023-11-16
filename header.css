@@ -306,7 +306,7 @@ input[type=text] {
 .dropdown:hover .dropdown-item-mega-shop,
 .dropdown:hover .dropdown-item-mega-product {
     transition: all 0.4s;
-    top: 6.1rem;
+    top: 6.3rem;
     opacity: 1;
     visibility: visible;
 }
