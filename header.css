@@ -211,7 +211,7 @@ input[type=text] {
     transform: translateX(-50%);
     padding-top: 1.5rem;
     margin-bottom: 2rem;
-    border-radius: 1rem;
+    border-radius: 0 0 1rem 1rem;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
